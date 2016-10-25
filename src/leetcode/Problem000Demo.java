@@ -2,7 +2,7 @@ package leetcode;
 
 /**
  * @author haogre
- * @description  just a demo
+ * @description  just a demo class
  * @date 2016年10月25日
  */
 public class Problem000Demo {
