@@ -5,7 +5,7 @@ package leetcode;
  * @description  just a demo
  * @date 2016年10月25日
  */
-public class Demo {
+public class Problem001Demo {
 	
 	public static void main(String[] args) {
 		System.out.println("hello world!");
