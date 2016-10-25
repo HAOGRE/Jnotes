@@ -1,7 +1,7 @@
 package leetcode;
 
 /**
- * @author Administrator
+ * @author haogre
  * @description 
  * @date 2016Äê10ÔÂ25ÈÕ
  */
