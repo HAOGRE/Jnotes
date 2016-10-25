@@ -2,8 +2,8 @@ package leetcode;
 
 /**
  * @author haogre
- * @description 
- * @date 2016Äê10ÔÂ25ÈÕ
+ * @description  just a demo
+ * @date 2016å¹´10æœˆ25æ—¥
  */
 public class Demo {
 	
