@@ -1,8 +1,5 @@
 package leetcode;
 
-import java.util.Arrays;
-import java.util.Comparator;
-
 /**
  * @author haogre
  * @description
