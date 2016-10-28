@@ -79,5 +79,18 @@ public class Problem002Solution {
         }
         return dummyHead.next;
     }
+    
+    public static void main(String[] args) {
+    	Problem002Solution solution = new Problem002Solution();
+    	ListNode l1 = new ListNode(3);
+    	l1.next = new ListNode(4);
+		l1.next = new ListNode(2);
+    	
+    	ListNode l2 = new ListNode(4);
+    	l2 = new ListNode(6);
+    	l2 = new ListNode(5);
+    	ListNode result = solution.addTwoNumbers(l1, l2);
+    	ListNode result2 = solution.addTwoNumbersOffical(l1, l2);
+	}
 
 }
