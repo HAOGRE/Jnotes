@@ -11,6 +11,7 @@ import java.util.NoSuchElementException;
 
 /**
  * LinkedList实际上是通过双向链表去实现的、整个链表是同过Entry实体类来存储数据的
+ * LinkedList 不是太熟悉 就了解下 
  */
 
 public class LinkedList<E> extends AbstractSequentialList<E>
