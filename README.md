@@ -2,9 +2,9 @@
 #####前几天看到[酷壳站长](http://coolshell.cn)的一篇[文章](http://coolshell.cn/articles/12052.html#more-12052)
 #####恰好最近晚上空闲有了些时间，打算把leetcode上算法题刷一下！[原始题目地址](https://leetcode.com/problemset/algorithms/)  
 
-| Left-aligned | Center-aligned | Right-aligned |
-| :---         |     :---:      |          ---: |
-| git status   | git status     | git status    |
+| 序号 | 难度 | 题目 | 地址|
+|     :---:      |     :---:      |     :---:      | :---         |
+|	p1	|	Two Sum  	|	★☆☆	|	[official site](https://leetcode.com/problems/two-sum/)|
 | git diff     | git diff       | git diff      |
 
 | 难度 | 序号 |题目 |地址|
