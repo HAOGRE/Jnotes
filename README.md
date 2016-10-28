@@ -5,11 +5,6 @@
 | 序号 | 难度 | 题目 | 地址|
 |     :---:      |     :---:      |     :---:      | :---         |
 |	p1	|	Two Sum  	|	★☆☆	|	[official site](https://leetcode.com/problems/two-sum/)|
-| git diff     | git diff       | git diff      |
-
-| 难度 | 序号 |题目 |地址|
-| :---:| :---: | :------: |    
-|	p1	|	Two Sum  	|	★☆☆	|	[official site](https://leetcode.com/problems/two-sum/)|
 |	p2	|	Add Two Numbers  	|	★★☆	|	[official site](https://leetcode.com/problems/add-two-numbers)|
 |	p3	|	Longest Substring Without Repeating Characters  	|	★★☆	|	[official site](https://leetcode.com/problems/longest-substring-without-repeating-characters)|
 |	p4	|	Median of Two Sorted Arrays  	|	★★★	|	[official site](https://leetcode.com/problems/median-of-two-sorted-arrays)|
