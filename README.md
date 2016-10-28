@@ -2,7 +2,7 @@
 #####前几天看到[酷壳站长](http://coolshell.cn)的一篇[文章](http://coolshell.cn/articles/12052.html#more-12052)
 #####恰好最近晚上空闲有了些时间，打算把leetcode上算法题刷一下！[原始题目地址](https://leetcode.com/problemset/algorithms/)  
 
-| 难度 | 序号 |题目 |地址
+| 难度 | 序号 |题目 |地址|
 | :---:| :---: | :------: |    
 |	p1	|	Two Sum  	|	★☆☆	|	[official site](https://leetcode.com/problems/two-sum/)|
 |	p2	|	Add Two Numbers  	|	★★☆	|	[official site](https://leetcode.com/problems/add-two-numbers)|
