@@ -4,9 +4,9 @@
 
 | 序号 | 难度 | 题目 | 地址| here|
 |     :---:      |     :---:      |     :---:      |     :---:      |     :---:      |
-|	p1	|	Two Sum  	|	★☆☆	|	[official site](https://leetcode.com/problems/two-sum/)|
-|	p2	|	Add Two Numbers  	|	★★☆	|	[official site](https://leetcode.com/problems/add-two-numbers)|[Solution ](https://github.com/HAOGRE/leetcode/blob/master/src/leetcode/Problem001Solution.java)|
-|	p3	|	Longest Substring Without Repeating Characters  	|	★★☆	|	[official site](https://leetcode.com/problems/longest-substring-without-repeating-characters)|[Solution ](https://github.com/HAOGRE/leetcode/blob/master/src/leetcode/Problem002Solution.java)|
+|	p1	|	Two Sum  	|	★☆☆	|	[official site](https://leetcode.com/problems/two-sum/)|[Solution ](https://github.com/HAOGRE/leetcode/blob/master/src/leetcode/Problem001Solution.java)|
+|	p2	|	Add Two Numbers  	|	★★☆	|	[official site](https://leetcode.com/problems/add-two-numbers)|[Solution ](https://github.com/HAOGRE/leetcode/blob/master/src/leetcode/Problem002Solution.java)|
+|	p3	|	Longest Substring Without Repeating Characters  	|	★★☆	|	[official site](https://leetcode.com/problems/longest-substring-without-repeating-characters)|
 |	p4	|	Median of Two Sorted Arrays  	|	★★★	|	[official site](https://leetcode.com/problems/median-of-two-sorted-arrays)|
 |	p5	|	Longest Palindromic Substring  	|	★★☆	|	[official site](https://leetcode.com/problems/longest-palindromic-substring)|
 |	p6	|	ZigZag Conversion  	|	★☆☆	|	[official site](https://leetcode.com/problems/zigzag-conversion)|
