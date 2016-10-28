@@ -46,7 +46,6 @@ public class Problem001Solution {
 	
 	//summary
 	//整体来讲 结果正确，效率明显较低  ！ 代码要先想再码 不然脑袋都成浆糊了 !
-	//写个Lambda 练练手哈 
 	
 	
 	public static void main(String[] args) {
