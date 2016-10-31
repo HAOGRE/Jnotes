@@ -1,6 +1,8 @@
 package leetcode;
 
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 /**
@@ -44,11 +46,11 @@ public class Problem003Solution {
     }
     
     /**
-     * Offical Solution
+     * Offical Solution1
      * @param s
      * @return
      */
-    public int lengthOfLongestSubstring(String s) {
+    public int lengthOfLongestSubstring1(String s) {
         int n = s.length();
         int ans = 0;
         for (int i = 0; i < n; i++)
@@ -67,19 +69,63 @@ public class Problem003Solution {
         return true;
     }
     
+    /**
+     * Offical Solution2
+     * @param s
+     * @return
+     */
+    public int lengthOfLongestSubstring2(String s) {
+        int n = s.length();
+        Set<Character> set = new HashSet<>();
+        int ans = 0, i = 0, j = 0;
+        while (i < n && j < n) {
+            // try to extend the range [i, j]
+            if (!set.contains(s.charAt(j))){
+                set.add(s.charAt(j++));
+                ans = Math.max(ans, j - i);
+            }
+            else {
+                set.remove(s.charAt(i++));
+            }
+        }
+        return ans;
+    }
     
-	public static void main(String[] args) {
-		String s = "abcabcbb";
-		String s1 = "bbbbb";
-		String s2 = "pwwkew";
-		String s3 = "c";
-		String s4 = "ohomm";
-		System.out.println(s4.charAt(2));
-
-		Problem003Solution solution = new Problem003Solution();
-//		System.out.println(solution.lengthOfLongestSubstring(s));
-//		System.out.println(solution.lengthOfLongestSubstring(s1));
-//		System.out.println(solution.lengthOfLongestSubstring(s2));
-		System.out.println(solution.lengthOfLongestSubstringOffical(s4));
-	}
+    /**
+     * Offical Solution3
+     * @param s
+     * @return
+     */
+    public int lengthOfLongestSubstring3(String s) {
+        int n = s.length(), ans = 0;
+        Map<Character, Integer> map = new HashMap<>(); // current index of character
+        // try to extend the range [i, j]
+        for (int j = 0, i = 0; j < n; j++) {
+            if (map.containsKey(s.charAt(j))) {
+                i = Math.max(map.get(s.charAt(j)), i);
+            }
+            ans = Math.max(ans, j - i + 1);
+            map.put(s.charAt(j), j + 1);
+        }
+        return ans;
+    }
+    
+    /**
+     * Offical Solution4
+     * @param s
+     * @return
+     */
+    public int lengthOfLongestSubstring4(String s) {
+    	int n = s.length(), ans = 0;
+    	int[] index = new int[128]; // current index of character
+    	// try to extend the range [i, j]
+    	for (int j = 0, i = 0; j < n; j++) {
+    		i = Math.max(index[s.charAt(j)], i);
+    		ans = Math.max(ans, j - i + 1);
+    		index[s.charAt(j)] = j + 1;
+    	}
+    	return ans;
+    }
+    
+    
 }
