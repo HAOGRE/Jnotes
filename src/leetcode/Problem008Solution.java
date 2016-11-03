@@ -2,7 +2,7 @@ package leetcode;
 
 /**
  * @author Administrator
- * @description String to Integer (atoi  //此题并未解出 情况太多考虑不到如何全部取出不符合的情况
+ * @description String to Integer (atoi  //此题并未解出 情况太多考虑不到如何全部取出不符合的情况    ascii to integer
  * @date 2016年11月3日
  */
 public class Problem008Solution {
