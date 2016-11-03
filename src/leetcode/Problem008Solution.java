@@ -10,7 +10,7 @@ public class Problem008Solution {
 		if(str == null) {
             return 0;
         }
-        str = str.trim();
+        str = str.trim();//去除前后空格
         if (str.length() == 0) {
             return 0;
         }
@@ -18,7 +18,7 @@ public class Problem008Solution {
         int sign = 1;
         int index = 0;
     
-        if (str.charAt(index) == '+') {
+        if (str.charAt(index) == '+') {//处理+ - 号问题
             index++;
         } else if (str.charAt(index) == '-') {
             sign = -1;
