@@ -8,7 +8,7 @@ import java.util.Map;
  * @description Problem013 Roman to Integer
  * @date 2016年11月3日
  */
-public class Problem013 {
+public class Problem013Solution {
 	public int romanToInt(String s) {
 		if (s == null || s.length() == 0) {
 			return 0;
@@ -48,7 +48,7 @@ public class Problem013 {
 		//+= 是错误的  后卫比前卫大的时候应该减  比如 IV = 4 
 		System.out.println(x.charAt(0)); //==I
 		
-		Problem013 s013 = new Problem013();
+		Problem013Solution s013 = new Problem013Solution();
 		System.out.println(s013.romanToInt(x));
 	}
 }
