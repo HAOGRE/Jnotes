@@ -11,12 +11,12 @@
 |	p5	|	Longest Palindromic Substring  	|	★★☆	|	[official site](https://leetcode.com/problems/longest-palindromic-substring)|
 |	p6	|	ZigZag Conversion  	|	★☆☆	|	[official site](https://leetcode.com/problems/zigzag-conversion)|
 |	p7	|	Reverse Integer  	|	★☆☆	|	[official site](https://leetcode.com/problems/reverse-integer)|
-|	p8	|	String to Integer (atoi)  	|	★☆☆	|	[official site](https://leetcode.com/problems/string-to-integer-atoi)|
+|	p8	|	String to Integer (atoi)  	|	★☆☆	|	[official site](https://leetcode.com/problems/string-to-integer-atoi)|[Solution ](https://github.com/HAOGRE/leetcode/blob/master/src/leetcode/Problem008Solution.java)|
 |	p9	|	Palindrome Number  	|	★☆☆	|	[official site](https://leetcode.com/problems/palindrome-number)|
 |	p10	|	Regular Expression Matching  	|	★★★	|	[official site](https://leetcode.com/problems/regular-expression-matching)|
 |	p11	|	Container With Most Water  	|	★★☆	|	[official site](https://leetcode.com/problems/container-with-most-water)|
-|	p12	|	Integer to Roman  	|	★★☆	|	[official site](https://leetcode.com/problems/integer-to-roman)|
-|	p13	|	Roman to Integer  	|	★☆☆	|	[official site](https://leetcode.com/problems/roman-to-integer)|
+|	p12	|	Integer to Roman  	|	★★☆	|	[official site](https://leetcode.com/problems/integer-to-roman)|[Solution ](https://github.com/HAOGRE/leetcode/blob/master/src/leetcode/Problem012Solution.java)|
+|	p13	|	Roman to Integer  	|	★☆☆	|	[official site](https://leetcode.com/problems/roman-to-integer)|[Solution ](https://github.com/HAOGRE/leetcode/blob/master/src/leetcode/Problem013Solution.java)|
 |	p14	|	Longest Common Prefix  	|	★☆☆	|	[official site](https://leetcode.com/problems/longest-common-prefix)|
 |	p15	|	3Sum  	|	★★☆	|	[official site](https://leetcode.com/problems/3sum)|
 |	p16	|	3Sum Closest  	|	★★☆	|	[official site](https://leetcode.com/problems/3sum-closest)|
