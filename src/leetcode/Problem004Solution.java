@@ -2,11 +2,11 @@ package leetcode;
 
 /**
  * @author haogre
- * @description  这个题刷锅  不是我的锅 就是这么简单
+ * @description  这个题刷锅  不是我的锅 就是这么简单  
  * @date 2016年11月14日
  */
 public class Problem004Solution {
-    
+     
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int len = nums1.length + nums2.length;
         if (len % 2 == 1) {
