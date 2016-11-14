@@ -2,7 +2,7 @@ package leetcode;
 
 /**
  * @author haogre
- * @description  这个题刷锅  不是我的锅 就是这么简单  
+ * @description  这个题刷锅  不是我的锅 就是这么简单   
  * @date 2016年11月14日
  */
 public class Problem004Solution {
