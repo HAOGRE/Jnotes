@@ -7,8 +7,8 @@
 |	p1	|	Two Sum  	|	★☆☆	|	[official site](https://leetcode.com/problems/two-sum/)|[Solution ](https://github.com/HAOGRE/leetcode/blob/master/src/leetcode/Problem001Solution.java)|
 |	p2	|	Add Two Numbers  	|	★★☆	|	[official site](https://leetcode.com/problems/add-two-numbers)|[Solution ](https://github.com/HAOGRE/leetcode/blob/master/src/leetcode/Problem002Solution.java)|
 |	p3	|	Longest Substring Without Repeating Characters  	|	★★☆	|	[official site](https://leetcode.com/problems/longest-substring-without-repeating-characters)|[Solution ](https://github.com/HAOGRE/leetcode/blob/master/src/leetcode/Problem003Solution.java)|
-|	p4	|	Median of Two Sorted Arrays  	|	★★★	|	[official site](https://leetcode.com/problems/median-of-two-sorted-arrays)|
-|	p5	|	Longest Palindromic Substring  	|	★★☆	|	[official site](https://leetcode.com/problems/longest-palindromic-substring)|
+|	p4	|	Median of Two Sorted Arrays  	|	★★★	|	[official site](https://leetcode.com/problems/median-of-two-sorted-arrays)|[Solution ](https://github.com/HAOGRE/leetcode/blob/master/src/leetcode/Problem004Solution.java)|
+|	p5	|	Longest Palindromic Substring  	|	★★☆	|	[official site](https://leetcode.com/problems/longest-palindromic-substring)|[Solution ](https://github.com/HAOGRE/leetcode/blob/master/src/leetcode/Problem005Solution.java)|
 |	p6	|	ZigZag Conversion  	|	★☆☆	|	[official site](https://leetcode.com/problems/zigzag-conversion)|
 |	p7	|	Reverse Integer  	|	★☆☆	|	[official site](https://leetcode.com/problems/reverse-integer)|
 |	p8	|	String to Integer (atoi)  	|	★☆☆	|	[official site](https://leetcode.com/problems/string-to-integer-atoi)|[Solution ](https://github.com/HAOGRE/leetcode/blob/master/src/leetcode/Problem008Solution.java)|
