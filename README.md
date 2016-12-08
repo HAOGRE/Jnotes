@@ -10,7 +10,7 @@
 |	p4	|	Median of Two Sorted Arrays  	|	★★★	|	[official site](https://leetcode.com/problems/median-of-two-sorted-arrays)|[Solution ](https://github.com/HAOGRE/leetcode/blob/master/src/leetcode/Problem004Solution.java)|
 |	p5	|	Longest Palindromic Substring  	|	★★☆	|	[official site](https://leetcode.com/problems/longest-palindromic-substring)|[Solution ](https://github.com/HAOGRE/leetcode/blob/master/src/leetcode/Problem005Solution.java)|
 |	p6	|	ZigZag Conversion  	|	★☆☆	|	[official site](https://leetcode.com/problems/zigzag-conversion)|
-|	p7	|	Reverse Integer  	|	★☆☆	|	[official site](https://leetcode.com/problems/reverse-integer)|
+|	p7	|	Reverse Integer  	|	★☆☆	|	[official site](https://leetcode.com/problems/reverse-integer)|[Solution ](https://github.com/HAOGRE/leetcode/blob/master/src/leetcode/Problem007Solution.java)|
 |	p8	|	String to Integer (atoi)  	|	★☆☆	|	[official site](https://leetcode.com/problems/string-to-integer-atoi)|[Solution ](https://github.com/HAOGRE/leetcode/blob/master/src/leetcode/Problem008Solution.java)|
 |	p9	|	Palindrome Number  	|	★☆☆	|	[official site](https://leetcode.com/problems/palindrome-number)|
 |	p10	|	Regular Expression Matching  	|	★★★	|	[official site](https://leetcode.com/problems/regular-expression-matching)|
