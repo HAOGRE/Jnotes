@@ -1,13 +1,6 @@
 package leetcode.extra;
 
-import java.util.AbstractSequentialList;
-import java.util.Collection;
-import java.util.ConcurrentModificationException;
-import java.util.Deque;
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
-import java.util.NoSuchElementException;
+import java.util.*;
 
 /**
  * LinkedList实际上是通过双向链表去实现的、整个链表是同过Entry实体类来存储数据的
