@@ -12,7 +12,7 @@ import java.util.concurrent.Executors;
  *
  * @Project : leetcode
  * @Description:
- * @Author : zhanghao@nash.work
+ * @Author : haogre@gmail.com
  * @Date : 2019-02-20 17:14
  **/
 public class TestSingleton {

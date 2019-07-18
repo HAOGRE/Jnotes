@@ -5,7 +5,7 @@ package haogre.dp.singleton;
  *
  * @Project : leetcode
  * @Description:
- * @Author : zhanghao@nash.work
+ * @Author : haogre@gmail.com
  * @Date : 2019-02-20 17:13
  **/
 public class Singleton {
