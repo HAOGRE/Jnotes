@@ -7,3 +7,4 @@
 /leetcode.iml
 /.idea/modules.xml
 /out
+*.DS_Store

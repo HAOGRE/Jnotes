@@ -1,4 +1,4 @@
-package leetcode;
+package haogre.leetcode;
 
 /**
  * Definition for singly-linked list.
@@ -10,12 +10,12 @@ package leetcode;
  */
 
 
-import leetcode.extra.ListNode;
+import haogre.leetcode.extra.ListNode;
 
 /**
  * Created by haozhang on 2017/2/7.
  */
-public class Problem021Solution {
+public class Algorithm021Solution {
 
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
 

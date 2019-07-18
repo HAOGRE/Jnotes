@@ -1,12 +1,12 @@
-package leetcode;
+package haogre.leetcode;
 
 /**
  * Created by haogre on 12/6/2016.
  */
-public class Problem007Solution {
-	public int reverse(int x) {
+public class Algorithm007Solution {
+    public int reverse(int x) {
 
-		if (x == 0)return x;
+        if (x == 0) return x;
 
         int reversed = 0;
         while (x != 0) {
@@ -22,10 +22,10 @@ public class Problem007Solution {
     }
 
 
-	public static void main(String[] args) {
-		Problem007Solution s7 = new Problem007Solution();
-		int x = 123;
-		System.out.println(x/10/10);
-		System.out.println(s7.reverse(x));
-	}
+    public static void main(String[] args) {
+        Algorithm007Solution s7 = new Algorithm007Solution();
+        int x = 123;
+        System.out.println(x / 10 / 10);
+        System.out.println(s7.reverse(x));
+    }
 }

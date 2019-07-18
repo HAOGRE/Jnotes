@@ -11,13 +11,13 @@ package haogre.dp.singleton;
 
 public class InnerClassSingleton {
 
-  public static Singleton getInstance(){
-    return Singleton.singleton;
-  }
+    public static Singleton getInstance() {
+        return Singleton.singleton;
+    }
 
-  private static class Singleton{
+    private static class Singleton {
 
-    protected static Singleton singleton = new Singleton();
+        protected static Singleton singleton = new Singleton();
 
-  }
+    }
 }

@@ -17,42 +17,42 @@ import java.util.concurrent.Executors;
  **/
 public class TestSingleton {
 
-  boolean lock ;
+    boolean lock;
 
-  public boolean isLock() {
-    return lock;
-  }
+    public boolean isLock() {
+        return lock;
+    }
 
-  public void setLock(boolean lock) {
-    this.lock = lock;
-  }
+    public void setLock(boolean lock) {
+        this.lock = lock;
+    }
 
-  public static void main(String[] args) throws InterruptedException {
-    final Set<String> instanceSet = Collections.synchronizedSet(new HashSet<String>());
-    final TestSingleton lock = new TestSingleton();
-    lock.setLock(true);
-    ExecutorService executorService = Executors.newCachedThreadPool();
-    for (int i = 0; i < 100; i++) {
-      executorService.execute(new Runnable() {
+    public static void main(String[] args) throws InterruptedException {
+        final Set<String> instanceSet = Collections.synchronizedSet(new HashSet<String>());
+        final TestSingleton lock = new TestSingleton();
+        lock.setLock(true);
+        ExecutorService executorService = Executors.newCachedThreadPool();
+        for (int i = 0; i < 100; i++) {
+            executorService.execute(new Runnable() {
 
-        public void run() {
-          while (true) {
-            if (!lock.isLock()) {
-              Singleton singleton = Singleton.getInstance();
-              instanceSet.add(singleton.toString());
-              break;
-            }
-          }
+                public void run() {
+                    while (true) {
+                        if (!lock.isLock()) {
+                            Singleton singleton = Singleton.getInstance();
+                            instanceSet.add(singleton.toString());
+                            break;
+                        }
+                    }
+                }
+            });
         }
-      });
+        Thread.sleep(5000);
+        lock.setLock(false);
+        Thread.sleep(5000);
+        System.out.println("------并发情况下我们取到的实例------");
+        for (String instance : instanceSet) {
+            System.out.println(instance);
+        }
+        executorService.shutdown();
     }
-    Thread.sleep(5000);
-    lock.setLock(false);
-    Thread.sleep(5000);
-    System.out.println("------并发情况下我们取到的实例------");
-    for (String instance : instanceSet) {
-      System.out.println(instance);
-    }
-    executorService.shutdown();
-  }
 }
