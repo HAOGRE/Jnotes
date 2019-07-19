@@ -8,3 +8,4 @@
 /.idea/modules.xml
 /out
 *.DS_Store
+/target
