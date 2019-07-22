@@ -17,42 +17,14 @@ import java.util.concurrent.Executors;
  **/
 public class TestSingleton {
 
-    boolean lock;
-
-    public boolean isLock() {
-        return lock;
-    }
-
-    public void setLock(boolean lock) {
-        this.lock = lock;
-    }
-
-    public static void main(String[] args) throws InterruptedException {
-        final Set<String> instanceSet = Collections.synchronizedSet(new HashSet<String>());
-        final TestSingleton lock = new TestSingleton();
-        lock.setLock(true);
-        ExecutorService executorService = Executors.newCachedThreadPool();
-        for (int i = 0; i < 100; i++) {
-            executorService.execute(new Runnable() {
-
-                public void run() {
-                    while (true) {
-                        if (!lock.isLock()) {
-                            Singleton singleton = Singleton.getInstance();
-                            instanceSet.add(singleton.toString());
-                            break;
-                        }
-                    }
-                }
-            });
-        }
-        Thread.sleep(5000);
-        lock.setLock(false);
-        Thread.sleep(5000);
-        System.out.println("------并发情况下我们取到的实例------");
-        for (String instance : instanceSet) {
-            System.out.println(instance);
-        }
-        executorService.shutdown();
-    }
+    /**
+     * 1、懒汉式，线程不安全
+     * 2、懒汉式，线程安全
+     * 3、饿汉式
+     * 4、双检锁/双重校验锁（DCL，即 double-checked locking）
+     * 5、登记式/静态内部类
+     * 6、枚举
+     * 7、反射攻击
+     * 8、框架应用
+     */
 }
