@@ -5,9 +5,7 @@ package haogre.leetcode;
  */
 public class Algorithm007Solution {
     public int reverse(int x) {
-
         if (x == 0) return x;
-
         int reversed = 0;
         while (x != 0) {
             int temp = reversed * 10 + x % 10;
@@ -24,7 +22,7 @@ public class Algorithm007Solution {
 
     public static void main(String[] args) {
         Algorithm007Solution s7 = new Algorithm007Solution();
-        int x = 123;
+        int x = 1534236469;
         System.out.println(x / 10 / 10);
         System.out.println(s7.reverse(x));
     }
