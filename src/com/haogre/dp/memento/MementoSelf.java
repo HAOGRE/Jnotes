@@ -8,6 +8,7 @@ public class MementoSelf {
         IMemento memento = originatorCaretaker.createMemento();    //保存状态
         originatorCaretaker.changeState("stateTwo");    //改变状态
         originatorCaretaker.recoverMemento(memento);    //恢复状态
+        System.out.println(originatorCaretaker.state);
     }
 }
 
