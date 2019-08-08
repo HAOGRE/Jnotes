@@ -1,5 +1,7 @@
 package com.haogre.java8.samples.lambda;
 
+import java.util.ArrayList;
+
 /**
  * @author Benjamin Winterberg
  */
@@ -36,6 +38,19 @@ public class Lambda4 {
 
     public static void main(String[] args) {
         new Lambda4().testScopes();
+        ArrayList<String> wordsList = new ArrayList<String>();
+        wordsList.add("Charles");
+        wordsList.add("Vincent");
+        wordsList.add("William");
+        wordsList.add("Joseph");
+        wordsList.add("Henry");
+        wordsList.add("Bill");
+        wordsList.add("Joan");
+        wordsList.add("Linda");
+        wordsList.stream().count();
+        int count = 0;
+        long count1 = wordsList.stream().filter(str -> str.length() > 6).count();
+        System.out.println(count1);
     }
 
 }
