@@ -1,16 +1,16 @@
 package com.haogre.dp.bridge;
 
+//实现者
+interface Cpu {
+    String discribe();
+}
+
 //桥接模式
 public class SimpleBridge {
     public static void main(String args[]) {
         new LenevoComputer(new Amd()).discribe();
         new HaseeComputer(new Intel()).discribe();
     }
-}
-
-//实现者
-interface Cpu {
-    String discribe();
 }
 
 //具体实现者*2

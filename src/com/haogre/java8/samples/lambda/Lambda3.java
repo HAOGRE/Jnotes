@@ -16,11 +16,6 @@ import java.util.function.Supplier;
  */
 public class Lambda3 {
 
-    @FunctionalInterface
-    interface Fun {
-        void foo();
-    }
-
     public static void main(String[] args) throws Exception {
 
         // Predicates
@@ -57,7 +52,6 @@ public class Lambda3 {
         greeter.accept(new Person("Luke", "Skywalker"));
 
 
-
         // Comparators
 
         Comparator<Person> comparator = (p1, p2) -> p1.firstName.compareTo(p2.firstName);
@@ -79,6 +73,11 @@ public class Lambda3 {
 
         Callable<UUID> callable = UUID::randomUUID;
         callable.call();
+    }
+
+    @FunctionalInterface
+    interface Fun {
+        void foo();
     }
 
 }

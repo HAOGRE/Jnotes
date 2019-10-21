@@ -1,16 +1,13 @@
 package com.haogre.dp.prototype;
 
+//抽象原型
+interface Prototype {
+    Object cloneSelf();//克隆自身的方法
+}
+
 //具体原型
 public class SimplePrototype implements Prototype, Cloneable {
     int value;
-
-    //clone()实现
-    @Override
-    public Object cloneSelf() {
-        SimplePrototype self = new SimplePrototype();
-        self.value = value;
-        return self;
-    }
 
     //使用
     public static void main(String args[]) {
@@ -19,11 +16,14 @@ public class SimplePrototype implements Prototype, Cloneable {
         SimplePrototype simplePrototypeClone = (SimplePrototype) simplePrototype.cloneSelf();
         System.out.println(simplePrototypeClone.value);
     }
-}
 
-//抽象原型
-interface Prototype {
-    Object cloneSelf();//克隆自身的方法
+    //clone()实现
+    @Override
+    public Object cloneSelf() {
+        SimplePrototype self = new SimplePrototype();
+        self.value = value;
+        return self;
+    }
 }
 
 //客户端使用

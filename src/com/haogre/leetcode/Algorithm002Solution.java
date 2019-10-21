@@ -9,6 +9,19 @@ import com.haogre.leetcode.extra.ListNode;
  */
 public class Algorithm002Solution {
 
+    public static void main(String[] args) {
+        Algorithm002Solution solution = new Algorithm002Solution();
+        ListNode l1 = new ListNode(3);
+        l1.next = new ListNode(4);
+        l1.next = new ListNode(2);
+
+        ListNode l2 = new ListNode(4);
+        l2 = new ListNode(6);
+        l2 = new ListNode(5);
+        ListNode result = solution.addTwoNumbers(l1, l2);
+        ListNode result2 = solution.addTwoNumbersOffical(l1, l2);
+    }
+
     /**
      * my Solution
      *
@@ -80,19 +93,6 @@ public class Algorithm002Solution {
             curr.next = new ListNode(carry);
         }
         return dummyHead.next;
-    }
-
-    public static void main(String[] args) {
-        Algorithm002Solution solution = new Algorithm002Solution();
-        ListNode l1 = new ListNode(3);
-        l1.next = new ListNode(4);
-        l1.next = new ListNode(2);
-
-        ListNode l2 = new ListNode(4);
-        l2 = new ListNode(6);
-        l2 = new ListNode(5);
-        ListNode result = solution.addTwoNumbers(l1, l2);
-        ListNode result2 = solution.addTwoNumbersOffical(l1, l2);
     }
 
 }

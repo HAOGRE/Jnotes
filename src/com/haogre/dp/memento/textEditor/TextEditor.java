@@ -2,6 +2,9 @@ package com.haogre.dp.memento.textEditor;
 
 import java.util.LinkedList;
 
+interface IMemento {
+}
+
 //文本编辑器
 public class TextEditor {
     public static void main(String[] args) {
@@ -26,9 +29,6 @@ public class TextEditor {
         System.out.println("再次重做：");
         for (int i = 0; i < 10; i++) editor.redo();        //重做大于实际恢复的次数不会出错，只会将文本设为最后状态
     }
-}
-
-interface IMemento {
 }
 
 //发起人兼负责人
@@ -109,6 +109,10 @@ class MyTextEditor {
         return true;
     }
 
+    void print() {
+        System.out.println("当前文本：" + text);
+    }
+
     //内部类实现备忘录
     private class Memento implements IMemento {
         private String state;
@@ -116,9 +120,5 @@ class MyTextEditor {
         private Memento(MyTextEditor editor) {
             this.state = editor.text.toString();
         }
-    }
-
-    void print() {
-        System.out.println("当前文本：" + text);
     }
 }

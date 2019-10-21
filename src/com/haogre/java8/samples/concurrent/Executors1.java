@@ -21,8 +21,7 @@ public class Executors1 {
                 TimeUnit.SECONDS.sleep(seconds);
                 String name = Thread.currentThread().getName();
                 System.out.println("task finished: " + name);
-            }
-            catch (InterruptedException e) {
+            } catch (InterruptedException e) {
                 System.err.println("task interrupted");
             }
         });
@@ -34,11 +33,9 @@ public class Executors1 {
             System.out.println("attempt to shutdown executor");
             executor.shutdown();
             executor.awaitTermination(5, TimeUnit.SECONDS);
-        }
-        catch (InterruptedException e) {
+        } catch (InterruptedException e) {
             System.err.println("termination interrupted");
-        }
-        finally {
+        } finally {
             if (!executor.isTerminated()) {
                 System.err.println("killing non-finished tasks");
             }

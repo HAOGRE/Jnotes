@@ -7,16 +7,6 @@ package com.haogre.leetcode;
  */
 public class Algorithm004Solution {
 
-    public double findMedianSortedArrays(int[] nums1, int[] nums2) {
-        int len = nums1.length + nums2.length;
-        if (len % 2 == 1) {
-            return findKth(nums1, 0, nums2, 0, len / 2 + 1);
-        }
-        return (
-                findKth(nums1, 0, nums2, 0, len / 2) + findKth(nums1, 0, nums2, 0, len / 2 + 1)
-        ) / 2.0;
-    }
-
     // 递归处理
     public static int findKth(int[] A, int A_start,
                               int[] B, int B_start,
@@ -44,5 +34,15 @@ public class Algorithm004Solution {
         } else {
             return findKth(A, A_start, B, B_start + k / 2, k - k / 2);
         }
+    }
+
+    public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+        int len = nums1.length + nums2.length;
+        if (len % 2 == 1) {
+            return findKth(nums1, 0, nums2, 0, len / 2 + 1);
+        }
+        return (
+                findKth(nums1, 0, nums2, 0, len / 2) + findKth(nums1, 0, nums2, 0, len / 2 + 1)
+        ) / 2.0;
     }
 }

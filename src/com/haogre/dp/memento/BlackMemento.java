@@ -1,5 +1,8 @@
 package com.haogre.dp.memento;
 
+interface MementoIF {
+}
+
 //备忘录模式
 public class BlackMemento {
     public static void main(String[] args) {
@@ -10,9 +13,6 @@ public class BlackMemento {
         originator.setState("stateTwo");    //修改状态
         originator.recoverMemento(caretaker.recoverMemento());//恢复状态
     }
-}
-
-interface MementoIF {
 }
 
 //发起人

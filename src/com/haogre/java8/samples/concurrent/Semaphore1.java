@@ -37,11 +37,9 @@ public class Semaphore1 {
         try {
             permit = semaphore.tryAcquire(5, TimeUnit.SECONDS);
             count++;
-        }
-        catch (InterruptedException e) {
+        } catch (InterruptedException e) {
             throw new RuntimeException("could not increment");
-        }
-        finally {
+        } finally {
             if (permit) {
                 semaphore.release();
             }

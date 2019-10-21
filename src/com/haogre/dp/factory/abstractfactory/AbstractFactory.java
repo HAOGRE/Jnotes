@@ -1,5 +1,22 @@
 package com.haogre.dp.factory.abstractfactory;
 
+//抽象产品*2
+interface Headset {
+    void play();
+}
+
+//抽象产品
+interface MeizuPhone {
+    void run();
+}
+
+//抽象工厂
+interface IFactory {
+    MeizuPhone producePhone();
+
+    Headset produceHeadset();
+}
+
 //抽象工厂模式
 public class AbstractFactory {
     public static void main(String args[]) {
@@ -10,16 +27,6 @@ public class AbstractFactory {
         smallfactory.producePhone().run();
         smallfactory.produceHeadset().play();
     }
-}
-
-//抽象产品*2
-interface Headset {
-    void play();
-}
-
-//抽象产品
-interface MeizuPhone {
-    void run();
 }
 
 //具体产品*2*2
@@ -49,13 +56,6 @@ class EP30 implements Headset {
     public void play() {
         System.out.println("我是一台EP30");
     }
-}
-
-//抽象工厂
-interface IFactory {
-    MeizuPhone producePhone();
-
-    Headset produceHeadset();
 }
 
 //具体工厂*2

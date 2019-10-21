@@ -30,7 +30,6 @@ public class Streams2 {
 
         System.out.println(stringCollection);
 
-        
 
     }
 

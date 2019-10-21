@@ -7,6 +7,18 @@ package com.haogre.leetcode;
  */
 public class Algorithm001Solution {
 
+    public static void main(String[] args) {
+        int[] arr = new int[]{3, 2, 4};
+        int target = 6;
+
+        Algorithm001Solution Algorithm001Solution = new Algorithm001Solution();
+        int[] twoSum = Algorithm001Solution.twoSum(arr, target);
+
+        System.out.println("the first index is " + "-" + twoSum[0] + "-");
+        System.out.println("the second index is " + "-" + twoSum[1] + "-");
+
+    }
+
     /**
      * my Solution
      *
@@ -28,6 +40,9 @@ public class Algorithm001Solution {
         return result;
     }
 
+    //summary
+    //整体来讲 结果正确，效率明显较低  ！ 代码要先想再码 不然脑袋都成浆糊了 !
+
     /**
      * official Solution
      *
@@ -44,22 +59,6 @@ public class Algorithm001Solution {
             }
         }
         throw new IllegalArgumentException("No two sum solution");
-    }
-
-    //summary
-    //整体来讲 结果正确，效率明显较低  ！ 代码要先想再码 不然脑袋都成浆糊了 !
-
-
-    public static void main(String[] args) {
-        int[] arr = new int[]{3, 2, 4};
-        int target = 6;
-
-        Algorithm001Solution Algorithm001Solution = new Algorithm001Solution();
-        int[] twoSum = Algorithm001Solution.twoSum(arr, target);
-
-        System.out.println("the first index is " + "-" + twoSum[0] + "-");
-        System.out.println("the second index is " + "-" + twoSum[1] + "-");
-
     }
 
 }

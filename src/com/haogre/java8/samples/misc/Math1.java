@@ -13,8 +13,7 @@ public class Math1 {
     private static void testUnsignedInt() {
         try {
             Integer.parseUnsignedInt("-123", 10);
-        }
-        catch (NumberFormatException e) {
+        } catch (NumberFormatException e) {
             System.out.println(e.getMessage());
         }
 
@@ -31,8 +30,7 @@ public class Math1 {
 
         try {
             Integer.parseInt(string, 10);
-        }
-        catch (NumberFormatException e) {
+        } catch (NumberFormatException e) {
             System.err.println("could not parse signed int of " + maxUnsignedInt);
         }
     }
@@ -43,15 +41,13 @@ public class Math1 {
 
         try {
             Math.addExact(Integer.MAX_VALUE, 1);
-        }
-        catch (ArithmeticException e) {
+        } catch (ArithmeticException e) {
             System.err.println(e.getMessage());
         }
 
         try {
             Math.toIntExact(Long.MAX_VALUE);
-        }
-        catch (ArithmeticException e) {
+        } catch (ArithmeticException e) {
             System.err.println(e.getMessage());
         }
     }

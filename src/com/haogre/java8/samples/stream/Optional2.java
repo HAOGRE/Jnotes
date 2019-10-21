@@ -5,36 +5,12 @@ import java.util.function.Supplier;
 
 /**
  * Examples how to avoid null checks with Optional:
- *
+ * <p>
  * http://winterbe.com/posts/2015/03/15/avoid-null-checks-in-java/
  *
  * @author Benjamin Winterberg
  */
 public class Optional2 {
-
-    static class Outer {
-        Nested nested = new Nested();
-
-        public Nested getNested() {
-            return nested;
-        }
-    }
-
-    static class Nested {
-        Inner inner = new Inner();
-
-        public Inner getInner() {
-            return inner;
-        }
-    }
-
-    static class Inner {
-        String foo = "boo";
-
-        public String getFoo() {
-            return foo;
-        }
-    }
 
     public static void main(String[] args) {
         test1();
@@ -46,8 +22,7 @@ public class Optional2 {
         try {
             T result = resolver.get();
             return Optional.ofNullable(result);
-        }
-        catch (NullPointerException e) {
+        } catch (NullPointerException e) {
             return Optional.empty();
         }
     }
@@ -72,5 +47,29 @@ public class Optional2 {
                 .flatMap(n -> Optional.ofNullable(n.inner))
                 .flatMap(i -> Optional.ofNullable(i.foo))
                 .ifPresent(System.out::println);
+    }
+
+    static class Outer {
+        Nested nested = new Nested();
+
+        public Nested getNested() {
+            return nested;
+        }
+    }
+
+    static class Nested {
+        Inner inner = new Inner();
+
+        public Inner getInner() {
+            return inner;
+        }
+    }
+
+    static class Inner {
+        String foo = "boo";
+
+        public String getFoo() {
+            return foo;
+        }
     }
 }

@@ -21,7 +21,7 @@ public class Samples {
         System.out.println(names);
         Collections.sort(names, Comparator.reverseOrder());
         System.out.println(names);
-        names.sort((a,b) -> a.compareTo(b));
+        names.sort((a, b) -> a.compareTo(b));
         System.out.println(names);
 
 

@@ -2,12 +2,7 @@ package com.haogre.java8.samples.nashorn;
 
 import jdk.nashorn.api.scripting.NashornScriptEngine;
 
-import javax.script.Bindings;
-import javax.script.ScriptContext;
-import javax.script.ScriptEngineManager;
-import javax.script.ScriptException;
-import javax.script.SimpleBindings;
-import javax.script.SimpleScriptContext;
+import javax.script.*;
 
 /**
  * @author Benjamin Winterberg

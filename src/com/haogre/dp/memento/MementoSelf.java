@@ -1,5 +1,8 @@
 package com.haogre.dp.memento;
 
+interface IMemento {
+}
+
 //自述历史备忘录
 public class MementoSelf {
     public static void main(String[] args) {
@@ -10,9 +13,6 @@ public class MementoSelf {
         originatorCaretaker.recoverMemento(memento);    //恢复状态
         System.out.println(originatorCaretaker.state);
     }
-}
-
-interface IMemento {
 }
 
 //发起人兼负责人

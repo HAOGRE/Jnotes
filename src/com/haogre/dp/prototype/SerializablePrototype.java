@@ -1,17 +1,27 @@
 package com.haogre.dp.prototype;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.Serializable;
+import java.io.*;
 
 //使用Serializable支持克隆
 public class SerializablePrototype implements Serializable {
     private static final long serialVersionUID = 1L;
     private int i;
     private transient int notClone;//transient关键字的成员不会被序列化
+
+    public static long getSerialversionuid() {
+        return serialVersionUID;
+    }
+
+    public static void main(String args[]) throws Exception {
+        String path = "D:/SerializablePrototype.instance";
+        SerializablePrototype prototype = new SerializablePrototype();
+        prototype.setI(123);
+        prototype.setNotClone(456);
+        prototype.writeToFile(path);
+        SerializablePrototype prototypeClone = new SerializablePrototype();
+        prototypeClone = prototype.ReadFromFile(path);
+        System.out.println(prototypeClone.getI() + " " + prototypeClone.getNotClone() + " ");
+    }
 
     public int getI() {
         return i;
@@ -27,10 +37,6 @@ public class SerializablePrototype implements Serializable {
 
     public void setNotClone(int notClone) {
         this.notClone = notClone;
-    }
-
-    public static long getSerialversionuid() {
-        return serialVersionUID;
     }
 
     public void writeToFile(String path) throws Exception {
@@ -49,16 +55,5 @@ public class SerializablePrototype implements Serializable {
         Object o = objectOutputStream.readObject();
         inStream.close();
         return (SerializablePrototype) o;
-    }
-
-    public static void main(String args[]) throws Exception {
-        String path = "D:/SerializablePrototype.instance";
-        SerializablePrototype prototype = new SerializablePrototype();
-        prototype.setI(123);
-        prototype.setNotClone(456);
-        prototype.writeToFile(path);
-        SerializablePrototype prototypeClone = new SerializablePrototype();
-        prototypeClone = prototype.ReadFromFile(path);
-        System.out.println(prototypeClone.getI() + " " + prototypeClone.getNotClone() + " ");
     }
 }

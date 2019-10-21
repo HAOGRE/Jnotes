@@ -1,5 +1,14 @@
 package com.haogre.dp.factory.factorymethod;
 
+//抽象产品
+interface MeizuPhone {
+    void run();
+}
+
+interface IFactory {
+    MeizuPhone produce();
+}
+
 //工厂方法模式
 public class FactoryMethod {
     public static void main(String args[]) {
@@ -9,11 +18,6 @@ public class FactoryMethod {
         bigfactory = new BigFactory();
         bigfactory.produce().run();
     }
-}
-
-//抽象产品
-interface MeizuPhone {
-    void run();
 }
 
 //具体产品*2
@@ -29,10 +33,6 @@ class MX5 implements MeizuPhone {
     public void run() {
         System.out.println("我是一台MX5");
     }
-}
-
-interface IFactory {
-    MeizuPhone produce();
 }
 
 //工厂*2

@@ -9,10 +9,10 @@ import java.util.*;
 
 public class LinkedList<E> extends AbstractSequentialList<E>
         implements List<E>, Deque<E>, Cloneable, java.io.Serializable {
+    private static final long serialVersionUID = 876323262645176354L;
     // 链表的表头、表头不包含任何数据、
     // Entry是双向链表节点所对应的数据结构，它包括的属性有：当前节点所包含的值，上一个节点，下一个节点。
     private transient Entry<E> header = new Entry<E>(null, null, null);
-
     // LinkedList中元素个数
     private transient int size = 0;
 
@@ -158,6 +158,8 @@ public class LinkedList<E> extends AbstractSequentialList<E>
         return true;
     }
 
+    // Positional Access Operations
+
     /**
      * 删除LinkedList中所有元素
      */
@@ -173,8 +175,6 @@ public class LinkedList<E> extends AbstractSequentialList<E>
         size = 0;
         modCount++;
     }
-
-    // Positional Access Operations
 
     /**
      * 获取index处的元素
@@ -207,6 +207,8 @@ public class LinkedList<E> extends AbstractSequentialList<E>
         return remove(entry(index));
     }
 
+    // Search Operations
+
     /**
      * 获取双向链表LinkedList中指定位置的节点、是LinkedList实现List中通过index操作元素的关键
      */
@@ -223,8 +225,6 @@ public class LinkedList<E> extends AbstractSequentialList<E>
         }
         return e;
     }
-
-    // Search Operations
 
     /**
      * 查询o所在LinkedList中的位置的索引、从前向后、不存在返回-1
@@ -247,6 +247,8 @@ public class LinkedList<E> extends AbstractSequentialList<E>
         return -1;
     }
 
+    // Queue operations.
+
     /**
      * 查询o所在LinkedList中的位置的索引、从后向前、不存在返回-1
      */
@@ -267,8 +269,6 @@ public class LinkedList<E> extends AbstractSequentialList<E>
         }
         return -1;
     }
-
-    // Queue operations.
 
     /**
      * 返回第一个节点、若size为0则返回null
@@ -302,14 +302,14 @@ public class LinkedList<E> extends AbstractSequentialList<E>
         return removeFirst();
     }
 
+    // Deque operations
+
     /**
      * 将e添加双向链表末尾
      */
     public boolean offer(E e) {
         return add(e);
     }
-
-    // Deque operations
 
     /**
      * 将e添加双向链表开头
@@ -411,6 +411,158 @@ public class LinkedList<E> extends AbstractSequentialList<E>
      */
     public ListIterator<E> listIterator(int index) {
         return new ListItr(index);
+    }
+
+    // 新建节点、节点值是e、将新建的节点添加到entry之前
+    private Entry<E> addBefore(E e, Entry<E> entry) {
+        // 觉得难理解的可以先花个几分钟看一下链式结构资料、最好是图片形式的
+        // 新建节点实体
+        Entry<E> newEntry = new Entry<E>(e, entry, entry.previous);
+        // 将参照节点原来的上一个节点（即插在谁前面的）的下一个节点设置成newEntry
+        newEntry.previous.next = newEntry;
+        // 将参照节点（即插在谁前面的）的前一个节点设置成newEntry
+        newEntry.next.previous = newEntry;
+        size++;
+        modCount++;
+        return newEntry;
+    }
+
+    // 将节点从链表中删除、返回被删除的节点的内容
+    private E remove(Entry<E> e) {
+        // 如果是表头、抛异常
+        if (e == header)
+            throw new NoSuchElementException();
+
+        E result = e.element;
+        // 下面实际上就是、将e拿掉、然后将e的上下两个节点连接起来
+        e.previous.next = e.next;
+        e.next.previous = e.previous;
+        e.next = e.previous = null;
+        e.element = null;
+        size--;
+        modCount++;
+        return result;
+    }
+
+    /**
+     * 反向迭代器
+     *
+     * @since 1.6
+     */
+    public Iterator<E> descendingIterator() {
+        return new DescendingIterator();
+    }
+
+    /**
+     * 返回LinkedList的克隆对象
+     */
+    public Object clone() {
+        LinkedList<E> clone = null;
+        try {
+            clone = (LinkedList<E>) super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new InternalError();
+        }
+
+        // Put clone into "virgin" state
+        clone.header = new Entry<E>(null, null, null);
+        clone.header.next = clone.header.previous = clone.header;
+        clone.size = 0;
+        clone.modCount = 0;
+
+        // Initialize clone with our elements
+        for (Entry<E> e = header.next; e != header; e = e.next)
+            clone.add(e.element);
+
+        return clone;
+    }
+
+    /**
+     * 将LinkedList中的所有元素转换成Object[]中
+     */
+    public Object[] toArray() {
+        Object[] result = new Object[size];
+        int i = 0;
+        for (Entry<E> e = header.next; e != header; e = e.next)
+            result[i++] = e.element;
+        return result;
+    }
+
+    /**
+     * 将LinkedList中的所有元素转换成Object[]中、并且完成类型转换
+     */
+    public <T> T[] toArray(T[] a) {
+        if (a.length < size)
+            a = (T[]) java.lang.reflect.Array.newInstance(a.getClass().getComponentType(), size);
+        int i = 0;
+        Object[] result = a;
+        for (Entry<E> e = header.next; e != header; e = e.next)
+            result[i++] = e.element;
+
+        if (a.length > size)
+            a[size] = null;
+
+        return a;
+    }
+
+    /**
+     * 将LinkedList的“容量，所有的元素值”都写入到输出流中 1、将LinkedList的容量写入进去
+     * 2、将LinkedList中的所有元素写入进去
+     */
+    private void writeObject(java.io.ObjectOutputStream s) throws java.io.IOException {
+        // Write out any hidden serialization magic
+        s.defaultWriteObject();
+
+        // Write out size
+        s.writeInt(size);
+
+        // Write out all elements in the proper order.
+        for (Entry e = header.next; e != header; e = e.next)
+            s.writeObject(e.element);
+    }
+
+    /**
+     * 将写入的LinkedList读取出来 1、读取写入的LinkedList的容量 2、读取写入的元素
+     */
+    private void readObject(java.io.ObjectInputStream s) throws java.io.IOException, ClassNotFoundException {
+        // Read in any hidden serialization magic
+        s.defaultReadObject();
+
+        // Read in size
+        int size = s.readInt();
+
+        // Initialize header
+        header = new Entry<E>(null, null, null);
+        header.next = header.previous = header;
+
+        // Read in all elements in the proper order.
+        for (int i = 0; i < size; i++)
+            addBefore((E) s.readObject(), header);
+    }
+
+    /**
+     * 内部静态类、是双向链表的节点所对应的数据结构、 此数据结构包含三部分：上一节点、下一节点、当前节点值
+     */
+    private static class Entry<E> {
+        // 当前节点值
+        E element;
+        // 下一节点
+        Entry<E> next;
+        // 上一节点
+        Entry<E> previous;
+
+        /**
+         * 链表节点构造函数
+         *
+         * @param element  节点值
+         * @param next     下一节点
+         * @param previous 上一节点
+         */
+        Entry(E element, Entry<E> next, Entry<E> previous) {
+            this.element = element;
+            this.next = next;
+            this.previous = previous;
+        }
     }
 
     private class ListItr implements ListIterator<E> {
@@ -526,71 +678,6 @@ public class LinkedList<E> extends AbstractSequentialList<E>
     }
 
     /**
-     * 内部静态类、是双向链表的节点所对应的数据结构、 此数据结构包含三部分：上一节点、下一节点、当前节点值
-     */
-    private static class Entry<E> {
-        // 当前节点值
-        E element;
-        // 下一节点
-        Entry<E> next;
-        // 上一节点
-        Entry<E> previous;
-
-        /**
-         * 链表节点构造函数
-         *
-         * @param element  节点值
-         * @param next     下一节点
-         * @param previous 上一节点
-         */
-        Entry(E element, Entry<E> next, Entry<E> previous) {
-            this.element = element;
-            this.next = next;
-            this.previous = previous;
-        }
-    }
-
-    // 新建节点、节点值是e、将新建的节点添加到entry之前
-    private Entry<E> addBefore(E e, Entry<E> entry) {
-        // 觉得难理解的可以先花个几分钟看一下链式结构资料、最好是图片形式的
-        // 新建节点实体
-        Entry<E> newEntry = new Entry<E>(e, entry, entry.previous);
-        // 将参照节点原来的上一个节点（即插在谁前面的）的下一个节点设置成newEntry
-        newEntry.previous.next = newEntry;
-        // 将参照节点（即插在谁前面的）的前一个节点设置成newEntry
-        newEntry.next.previous = newEntry;
-        size++;
-        modCount++;
-        return newEntry;
-    }
-
-    // 将节点从链表中删除、返回被删除的节点的内容
-    private E remove(Entry<E> e) {
-        // 如果是表头、抛异常
-        if (e == header)
-            throw new NoSuchElementException();
-
-        E result = e.element;
-        // 下面实际上就是、将e拿掉、然后将e的上下两个节点连接起来
-        e.previous.next = e.next;
-        e.next.previous = e.previous;
-        e.next = e.previous = null;
-        e.element = null;
-        size--;
-        modCount++;
-        return result;
-    }
-
-    /**
-     * 反向迭代器
-     *
-     * @since 1.6
-     */
-    public Iterator<E> descendingIterator() {
-        return new DescendingIterator();
-    }
-
-    /**
      * 反向迭代器实现类
      */
     private class DescendingIterator implements Iterator {
@@ -607,94 +694,5 @@ public class LinkedList<E> extends AbstractSequentialList<E>
         public void remove() {
             itr.remove();
         }
-    }
-
-    /**
-     * 返回LinkedList的克隆对象
-     */
-    public Object clone() {
-        LinkedList<E> clone = null;
-        try {
-            clone = (LinkedList<E>) super.clone();
-        } catch (CloneNotSupportedException e) {
-            throw new InternalError();
-        }
-
-        // Put clone into "virgin" state
-        clone.header = new Entry<E>(null, null, null);
-        clone.header.next = clone.header.previous = clone.header;
-        clone.size = 0;
-        clone.modCount = 0;
-
-        // Initialize clone with our elements
-        for (Entry<E> e = header.next; e != header; e = e.next)
-            clone.add(e.element);
-
-        return clone;
-    }
-
-    /**
-     * 将LinkedList中的所有元素转换成Object[]中
-     */
-    public Object[] toArray() {
-        Object[] result = new Object[size];
-        int i = 0;
-        for (Entry<E> e = header.next; e != header; e = e.next)
-            result[i++] = e.element;
-        return result;
-    }
-
-    /**
-     * 将LinkedList中的所有元素转换成Object[]中、并且完成类型转换
-     */
-    public <T> T[] toArray(T[] a) {
-        if (a.length < size)
-            a = (T[]) java.lang.reflect.Array.newInstance(a.getClass().getComponentType(), size);
-        int i = 0;
-        Object[] result = a;
-        for (Entry<E> e = header.next; e != header; e = e.next)
-            result[i++] = e.element;
-
-        if (a.length > size)
-            a[size] = null;
-
-        return a;
-    }
-
-    private static final long serialVersionUID = 876323262645176354L;
-
-    /**
-     * 将LinkedList的“容量，所有的元素值”都写入到输出流中 1、将LinkedList的容量写入进去
-     * 2、将LinkedList中的所有元素写入进去
-     */
-    private void writeObject(java.io.ObjectOutputStream s) throws java.io.IOException {
-        // Write out any hidden serialization magic
-        s.defaultWriteObject();
-
-        // Write out size
-        s.writeInt(size);
-
-        // Write out all elements in the proper order.
-        for (Entry e = header.next; e != header; e = e.next)
-            s.writeObject(e.element);
-    }
-
-    /**
-     * 将写入的LinkedList读取出来 1、读取写入的LinkedList的容量 2、读取写入的元素
-     */
-    private void readObject(java.io.ObjectInputStream s) throws java.io.IOException, ClassNotFoundException {
-        // Read in any hidden serialization magic
-        s.defaultReadObject();
-
-        // Read in size
-        int size = s.readInt();
-
-        // Initialize header
-        header = new Entry<E>(null, null, null);
-        header.next = header.previous = header;
-
-        // Read in all elements in the proper order.
-        for (int i = 0; i < size; i++)
-            addBefore((E) s.readObject(), header);
     }
 }

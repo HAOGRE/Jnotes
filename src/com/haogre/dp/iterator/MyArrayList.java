@@ -4,9 +4,9 @@ import java.util.Arrays;
 
 //方便演示而实现的简陋的数组list
 public class MyArrayList<T> implements MyList<T> {
+    private static final int defaultLength = 10;//默认长度
     private int size;                //存放的元素个数,会默认初始化为0
     private Object[] defaultList;    //使用数组存放元素
-    private static final int defaultLength = 10;//默认长度
 
     public MyArrayList() {                //默认构造函数
         defaultList = new Object[defaultLength];

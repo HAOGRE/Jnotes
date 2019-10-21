@@ -1,5 +1,10 @@
 package com.haogre.dp.factory.simplefactory;
 
+//抽象产品
+interface MeizuPhone {
+    void run();
+}
+
 //演示简单工厂
 public class SimpleFactory {
     public static void main(String args[]) throws Exception {
@@ -7,11 +12,6 @@ public class SimpleFactory {
         factory.produce("PRO5").run();
         factory.produce("PRO6").run();
     }
-}
-
-//抽象产品
-interface MeizuPhone {
-    void run();
 }
 
 //具体产品X2

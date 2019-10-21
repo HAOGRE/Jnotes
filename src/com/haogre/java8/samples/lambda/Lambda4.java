@@ -11,6 +11,23 @@ public class Lambda4 {
 
     int outerNum;
 
+    public static void main(String[] args) {
+        new Lambda4().testScopes();
+        ArrayList<String> wordsList = new ArrayList<String>();
+        wordsList.add("Charles");
+        wordsList.add("Vincent");
+        wordsList.add("William");
+        wordsList.add("Joseph");
+        wordsList.add("Henry");
+        wordsList.add("Bill");
+        wordsList.add("Joan");
+        wordsList.add("Linda");
+        wordsList.stream().count();
+        int count = 0;
+        long count1 = wordsList.stream().filter(str -> str.length() > 6).count();
+        System.out.println(count1);
+    }
+
     void testScopes() {
         int num = 1;
 
@@ -34,23 +51,6 @@ public class Lambda4 {
         stringConverter3.convert(23);
 
         System.out.println(array[0]);
-    }
-
-    public static void main(String[] args) {
-        new Lambda4().testScopes();
-        ArrayList<String> wordsList = new ArrayList<String>();
-        wordsList.add("Charles");
-        wordsList.add("Vincent");
-        wordsList.add("William");
-        wordsList.add("Joseph");
-        wordsList.add("Henry");
-        wordsList.add("Bill");
-        wordsList.add("Joan");
-        wordsList.add("Linda");
-        wordsList.stream().count();
-        int count = 0;
-        long count1 = wordsList.stream().filter(str -> str.length() > 6).count();
-        System.out.println(count1);
     }
 
 }

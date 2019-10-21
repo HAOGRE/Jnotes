@@ -6,6 +6,11 @@ package com.haogre.leetcode;
  * @date 2016年11月3日
  */
 public class Algorithm008Solution {
+    public static void main(String[] args) {
+        Algorithm008Solution s008 = new Algorithm008Solution();
+        System.out.println(s008.myAtoi("2147483648"));
+    }
+
     public int myAtoi(String str) {
         if (str == null) {
             return 0;
@@ -40,10 +45,5 @@ public class Algorithm008Solution {
             return Integer.MIN_VALUE;
         }
         return (int) num * sign;
-    }
-
-    public static void main(String[] args) {
-        Algorithm008Solution s008 = new Algorithm008Solution();
-        System.out.println(s008.myAtoi("2147483648"));
     }
 }

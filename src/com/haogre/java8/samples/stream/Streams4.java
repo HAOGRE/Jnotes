@@ -16,22 +16,22 @@ public class Streams4 {
         }
 
         IntStream.range(0, 10)
-            .forEach(i -> {
-                if (i % 2 == 1) System.out.println(i);
-            });
+                .forEach(i -> {
+                    if (i % 2 == 1) System.out.println(i);
+                });
 
         IntStream.range(0, 10)
-            .filter(i -> i % 2 == 1)
-            .forEach(System.out::println);
+                .filter(i -> i % 2 == 1)
+                .forEach(System.out::println);
 
         OptionalInt reduced1 =
-            IntStream.range(0, 10)
-                .reduce((a, b) -> a + b);
+                IntStream.range(0, 10)
+                        .reduce((a, b) -> a + b);
         System.out.println(reduced1.getAsInt());
 
         int reduced2 =
-            IntStream.range(0, 10)
-                .reduce(7, (a, b) -> a + b);
+                IntStream.range(0, 10)
+                        .reduce(7, (a, b) -> a + b);
         System.out.println(reduced2);
     }
 }

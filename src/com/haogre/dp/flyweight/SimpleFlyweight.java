@@ -2,6 +2,11 @@ package com.haogre.dp.flyweight;
 
 import java.util.HashMap;
 
+//享元接口
+interface IFlyweight {
+    void doSomething();
+}
+
 //简单的享元模式
 public class SimpleFlyweight {
     public static void main(String args[]) {
@@ -17,11 +22,6 @@ public class SimpleFlyweight {
         flyweight4.doSomething();
         System.out.println(factory.size());
     }
-}
-
-//享元接口
-interface IFlyweight {
-    void doSomething();
 }
 
 //具体享元

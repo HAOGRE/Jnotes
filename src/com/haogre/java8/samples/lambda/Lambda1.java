@@ -1,10 +1,6 @@
 package com.haogre.java8.samples.lambda;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 /**
  * @author Benjamin Winterberg
@@ -44,7 +40,7 @@ public class Lambda1 {
         Optional.ofNullable(names3).ifPresent(list -> list.sort(Comparator.naturalOrder()));
 
         Optional.ofNullable(names2).ifPresent(list -> {
-            list.forEach( name -> {
+            list.forEach(name -> {
                 System.out.println(name);
             });
         });
