@@ -10,7 +10,7 @@ package com.haogre.dsa;
  * @Version : V1.0
  **/
 public class Fibonacci {
-    public static int testNum(int num) {
+    private static int testNum(int num) {
         if (num < 0) {
             return -1;
         } else if (num == 0) {
