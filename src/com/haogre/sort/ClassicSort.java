@@ -23,7 +23,8 @@ public class ClassicSort {
         System.out.println(arr);
 
     }
-//    　　
+
+    //    　　
 //    十大经典排序算法最强总结（含JAVA代码实现）
 //    最近几天在研究排序算法，看了很多博客，发现网上有的文章中对排序算法解释的并不是很透彻，而且有很多代码都是错误的，例如有的文章中在“桶排序”算法中对每个桶进行排序直接使用了Collection.sort()函数，这样虽然能达到效果，但对于算法研究来讲是不可以的。所以我根据这几天看的文章，整理了一个较为完整的排序算法总结，本文中的所有算法均有JAVA实现，经本人调试无误后才发出，如有错误，请各位前辈指出。
 //            0、排序算法说明
@@ -81,18 +82,18 @@ public class ClassicSort {
 //  4      * @param array
 //  5      * @return
 //  6      */
-//         7     public static int[] bubbleSort(int[] array) {
-//        8         if (array.length == 0)
-//            9             return array;
-//        10         for (int i = 0; i < array.length; i++)
-//            11             for (int j = 0; j < array.length - 1 - i; j++)
-//            12                 if (array[j + 1] < array[j]) {
-//            13                     int temp = array[j + 1];
-//            14                     array[j + 1] = array[j];
-//            15                     array[j] = temp;
-//            16                 }
-//        17         return array;
-//        18     }
+    public static int[] bubbleSort(int[] array) {
+        if (array.length == 0)
+            return array;
+        for (int i = 0; i < array.length; i++)
+            for (int j = 0; j < array.length - 1 - i; j++)
+                if (array[j + 1] < array[j]) {
+                    int temp = array[j + 1];
+                    array[j + 1] = array[j];
+                    array[j] = temp;
+                }
+        return array;
+    }
 //    复制代码
 //
 //
