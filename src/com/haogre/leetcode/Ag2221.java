@@ -64,4 +64,33 @@ public class Ag2221 {
         }
         return rs * rs;
     }
+
+    /**
+     * 动态规划解法
+     * 动态规划的一般流程就是三步：暴力的递归解法 -> 带备忘录的递归解法 -> 迭代的动态规划解法。
+     * 思考流程：找到状态和选择 -> 明确 dp 数组/函数的定义 -> 寻找状态之间的关系。
+     */
+    public int maximalSquare2(char[][] matrix) {
+        int maxSide = 0;
+        if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
+            return maxSide;
+        }
+        int length = matrix.length, width = matrix[0].length;
+        int[][] dp = new int[length][width];
+        for (int i = 0; i < length; i++) {
+            for (int j = 0; j < width; j++) {
+                if (matrix[i][j] == '1') {
+                    if (i == 0 || j == 0) {
+                        dp[i][j] = 1;
+                    } else {
+                        dp[i][j] = Math.min(Math.min(dp[i - 1][j], dp[i][j - 1]), dp[i - 1][j - 1]) + 1;
+                    }
+                    maxSide = Math.max(maxSide, dp[i][j]);
+                }
+            }
+        }
+        return maxSide * maxSide;
+    }
+
+
 }
