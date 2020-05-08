@@ -33,7 +33,7 @@ public class Anagram {
     public static void main(String[] args) {
         String s = "asfdafadfasdf";
         String t = "asfdafadfasdf";
-        System.out.println(isAnagram(s,t));
+        System.out.println(isAnagram(s, t));
 
     }
 }

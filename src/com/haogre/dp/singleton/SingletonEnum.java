@@ -13,7 +13,7 @@ public enum SingletonEnum {
 
     INSTANCE;
 
-    private Resource instance;
+    private final Resource instance;
 
     SingletonEnum() {
         instance = new Resource();

@@ -7,7 +7,7 @@ import java.util.Map;
 
 //测试使用
 public class TestUse {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         IIteratorFactory<Integer> factory = new IteratorFactory<>();
         Collection<Integer> collection = new ArrayList<Integer>();
         Map<Integer, Object> map = new LinkedHashMap<>();

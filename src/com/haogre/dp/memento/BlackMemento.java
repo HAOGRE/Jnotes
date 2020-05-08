@@ -37,7 +37,7 @@ class BlankOriginator {
 
     //以内部类实现备忘录角色
     private class Memento implements MementoIF {
-        private String state;
+        private final String state;
 
         private Memento(String state) {
             this.state = state;

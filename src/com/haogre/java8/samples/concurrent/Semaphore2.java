@@ -11,7 +11,7 @@ import java.util.stream.IntStream;
  */
 public class Semaphore2 {
 
-    private static Semaphore semaphore = new Semaphore(5);
+    private static final Semaphore semaphore = new Semaphore(5);
 
     public static void main(String[] args) {
         ExecutorService executor = Executors.newFixedThreadPool(10);

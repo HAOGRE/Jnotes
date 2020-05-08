@@ -13,7 +13,7 @@ public class Semaphore1 {
 
     private static final int NUM_INCREMENTS = 10000;
 
-    private static Semaphore semaphore = new Semaphore(1);
+    private static final Semaphore semaphore = new Semaphore(1);
 
     private static int count = 0;
 

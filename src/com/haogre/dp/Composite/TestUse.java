@@ -3,7 +3,7 @@ package com.haogre.dp.Composite;
 import java.util.Iterator;
 
 public class TestUse {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Component root = new Folder("root");//根目录
         Component folder1 = new Folder("java");
         Component folder2 = new Folder("c++");

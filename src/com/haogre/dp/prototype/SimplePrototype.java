@@ -10,7 +10,7 @@ public class SimplePrototype implements Prototype, Cloneable {
     int value;
 
     //使用
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         SimplePrototype simplePrototype = new SimplePrototype();
         simplePrototype.value = 500;
         SimplePrototype simplePrototypeClone = (SimplePrototype) simplePrototype.cloneSelf();

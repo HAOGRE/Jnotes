@@ -1,7 +1,7 @@
 package com.haogre.dp.builder;
 
 public class TestUse {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         MyDate date = new MyDate();
         IDateBuilder builder;
         builder = new DateBuilder1(date).buildDate(2066, 3, 5);

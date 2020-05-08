@@ -1,7 +1,7 @@
 package com.haogre.dp.observer;
 
 public class ClientIphoneServer implements Client {
-    private static String name = "苹果服务";
+    private static final String name = "苹果服务";
     private WeatherInfo info;
 
     @Override

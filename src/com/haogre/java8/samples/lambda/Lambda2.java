@@ -8,7 +8,7 @@ import java.util.Optional;
 public class Lambda2 {
 
     @FunctionalInterface
-    public static interface Converter<F, T> {
+    public interface Converter<F, T> {
         T convert(F from);
     }
 

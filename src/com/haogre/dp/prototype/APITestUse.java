@@ -2,7 +2,7 @@ package com.haogre.dp.prototype;
 
 //使用 java 自带的支持
 public class APITestUse {
-    public static void main(String args[]) throws CloneNotSupportedException {
+    public static void main(String[] args) throws CloneNotSupportedException {
         MyObject myObject = new MyObject();
         myObject.i = 500;
         MyObject myObjectClone = (MyObject) myObject.clone();

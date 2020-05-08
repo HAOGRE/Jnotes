@@ -2,7 +2,7 @@ package com.haogre.dp.observer;
 
 
 public class TestUse {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         //创建主题
         WeatherService service = WeatherService.instance;
         //添加观察者

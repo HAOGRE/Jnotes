@@ -11,7 +11,7 @@ interface IFactory {
 
 //工厂方法模式
 public class FactoryMethod {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         IFactory bigfactory;
         bigfactory = new SmallFactory();
         bigfactory.produce().run();

@@ -7,8 +7,8 @@ import java.util.LinkedList;
 //主题，同时使用了枚举实现单例
 public enum WeatherService implements IWeatherService {
     instance;
-    private LinkedList<WeatherInfo> weatherInfos = new LinkedList<WeatherInfo>();
-    private LinkedHashSet<Client> clients = new LinkedHashSet<Client>();    //存放观察者
+    private final LinkedList<WeatherInfo> weatherInfos = new LinkedList<WeatherInfo>();
+    private final LinkedHashSet<Client> clients = new LinkedHashSet<Client>();    //存放观察者
 
     //添加观察者
     @Override

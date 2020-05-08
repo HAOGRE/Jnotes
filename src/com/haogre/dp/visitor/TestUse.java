@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class TestUse {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Visitor appOwner = new APPOwner();
         ArrayList<User> users = new ArrayList<User>();
         users.add(new UserOrdinary("普通用户短反馈"));

@@ -15,16 +15,15 @@ import java.util.concurrent.Semaphore;
  **/
 class H2O {
 
-    private CyclicBarrier barrier = new CyclicBarrier(3, new Runnable() {
+    private final Semaphore semaphoreH;
+    private final Semaphore semaphoreO;
+    private final CyclicBarrier barrier = new CyclicBarrier(3, new Runnable() {
         @Override
         public void run() {
             semaphoreH.release(2);
             semaphoreO.release();
         }
     });
-
-    private Semaphore semaphoreH;
-    private Semaphore semaphoreO;
 
     public H2O() {
         semaphoreH = new Semaphore(2);

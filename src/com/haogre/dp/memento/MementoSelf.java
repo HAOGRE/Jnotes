@@ -36,7 +36,7 @@ class OriginatorCaretaker {
 
     //内部类实现备忘录
     private class Memento implements IMemento {
-        private String state;
+        private final String state;
 
         private Memento(OriginatorCaretaker originatorCaretaker) {
             this.state = originatorCaretaker.state;

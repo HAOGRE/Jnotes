@@ -11,7 +11,7 @@ package com.haogre.dp.singleton;
  **/
 public class SingletonHungrySafe {
 
-    private static SingletonHungrySafe instance = new SingletonHungrySafe();
+    private static final SingletonHungrySafe instance = new SingletonHungrySafe();
 
     private SingletonHungrySafe() {
 

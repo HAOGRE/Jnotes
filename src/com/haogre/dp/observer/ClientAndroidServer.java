@@ -1,7 +1,7 @@
 package com.haogre.dp.observer;
 
 public class ClientAndroidServer implements Client {
-    private static String name = "安卓服务";
+    private static final String name = "安卓服务";
     private WeatherInfo info;
 
     @Override

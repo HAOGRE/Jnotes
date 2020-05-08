@@ -1,7 +1,7 @@
 package com.haogre.dp.visitor;
 
 public class MultiDispatch {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Father child = new Child();
         child.print();
         new Child().print(new Vistor());

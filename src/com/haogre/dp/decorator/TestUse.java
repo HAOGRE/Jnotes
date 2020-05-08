@@ -1,7 +1,7 @@
 package com.haogre.dp.decorator;
 
 public class TestUse {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         //被装饰者
         final String data = "数据";
         IPersistentUtil iPersistentUtil = new PersistentUtil();

@@ -13,7 +13,7 @@ import java.util.concurrent.CyclicBarrier;
  **/
 public class CyclicBarrierDemo {
 
-    private static CyclicBarrier c = new CyclicBarrier(2);
+    private static final CyclicBarrier c = new CyclicBarrier(2);
 
     public static void main(String[] args) {
         new Thread(() -> {

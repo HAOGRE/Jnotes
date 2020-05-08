@@ -2,7 +2,7 @@ package com.haogre.dp.builder;
 
 //指挥者
 public class Derector {
-    private IDateBuilder builder;
+    private final IDateBuilder builder;
 
     public Derector(IDateBuilder builder) {
         this.builder = builder;

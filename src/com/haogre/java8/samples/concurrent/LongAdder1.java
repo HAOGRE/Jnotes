@@ -12,7 +12,7 @@ public class LongAdder1 {
 
     private static final int NUM_INCREMENTS = 10000;
 
-    private static LongAdder adder = new LongAdder();
+    private static final LongAdder adder = new LongAdder();
 
     public static void main(String[] args) {
         testIncrement();

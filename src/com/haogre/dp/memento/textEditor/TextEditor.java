@@ -34,8 +34,8 @@ public class TextEditor {
 //发起人兼负责人
 class MyTextEditor {
     public StringBuffer text;
-    private LinkedList<IMemento> mementos;    //保存快照
-    private LinkedList<IMemento> undos;        //保存撤销的操作
+    private final LinkedList<IMemento> mementos;    //保存快照
+    private final LinkedList<IMemento> undos;        //保存撤销的操作
 
     public MyTextEditor() {
         this("");
@@ -115,7 +115,7 @@ class MyTextEditor {
 
     //内部类实现备忘录
     private class Memento implements IMemento {
-        private String state;
+        private final String state;
 
         private Memento(MyTextEditor editor) {
             this.state = editor.text.toString();

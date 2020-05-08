@@ -1,7 +1,7 @@
 package com.haogre.dp.factory.factorymethod;
 
 public class TestUse {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         //分别定义两种结构
         List<Integer> array = new IArrayList<Integer>();
         List<Integer> link = new LinkList<Integer>();

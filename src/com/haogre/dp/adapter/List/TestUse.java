@@ -3,7 +3,7 @@ package com.haogre.dp.adapter.List;
 import java.util.Iterator;
 
 public class TestUse {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         BookAdapter books = new BookAdapter();
         books.add("think in java");
         books.add("c++ primer");

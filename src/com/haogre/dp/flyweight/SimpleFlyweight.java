@@ -9,7 +9,7 @@ interface IFlyweight {
 
 //简单的享元模式
 public class SimpleFlyweight {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         FlyweightFactory factory = new FlyweightFactory();
         IFlyweight flyweight1, flyweight2, flyweight3, flyweight4;
         flyweight1 = factory.getFlyweight("value1");
@@ -26,7 +26,7 @@ public class SimpleFlyweight {
 
 //具体享元
 class Flyweight implements IFlyweight {
-    private String value;
+    private final String value;
 
     public Flyweight(String value) {
         this.value = value;

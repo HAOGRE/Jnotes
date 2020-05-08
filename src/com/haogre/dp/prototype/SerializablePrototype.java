@@ -12,7 +12,7 @@ public class SerializablePrototype implements Serializable {
         return serialVersionUID;
     }
 
-    public static void main(String args[]) throws Exception {
+    public static void main(String[] args) throws Exception {
         String path = "D:/SerializablePrototype.instance";
         SerializablePrototype prototype = new SerializablePrototype();
         prototype.setI(123);

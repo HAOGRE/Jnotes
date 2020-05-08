@@ -1,7 +1,7 @@
 package com.haogre.dp.flyweight;
 
 public class TestUse {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         WeatherFactory factory = new WeatherFactory();
         IWeather weather1, weather2, weather3, weather4, weather5, weather6, weather7, weather8;
         weather1 = factory.getFlyWeight("多云", 15);

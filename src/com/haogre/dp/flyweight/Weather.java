@@ -2,8 +2,8 @@ package com.haogre.dp.flyweight;
 
 //具体享元
 public class Weather implements IWeather {
-    private String weather;
-    private Integer temperature;
+    private final String weather;
+    private final Integer temperature;
 
     public Weather(String weather, int temperature) {
         this.weather = weather;

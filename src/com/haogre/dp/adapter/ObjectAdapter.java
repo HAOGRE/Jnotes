@@ -2,7 +2,7 @@ package com.haogre.dp.adapter;
 
 //对象适配器
 public class ObjectAdapter implements Target {
-    private Adaptee adaptee;
+    private final Adaptee adaptee;
 
     public ObjectAdapter() {
         super();

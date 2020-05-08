@@ -12,7 +12,7 @@ public class Atomic1 {
 
     private static final int NUM_INCREMENTS = 1000;
 
-    private static AtomicInteger atomicInt = new AtomicInteger(0);
+    private static final AtomicInteger atomicInt = new AtomicInteger(0);
 
     public static void main(String[] args) {
         testIncrement();

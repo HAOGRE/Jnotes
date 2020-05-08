@@ -12,7 +12,7 @@ public class Lock1 {
 
     private static final int NUM_INCREMENTS = 10000;
 
-    private static ReentrantLock lock = new ReentrantLock();
+    private static final ReentrantLock lock = new ReentrantLock();
 
     private static int count = 0;
 
