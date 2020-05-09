@@ -13,7 +13,7 @@ import java.util.concurrent.Semaphore;
  * @Date : 3/6/20 1:44 PM
  * @Version : V1.0
  **/
-class H2O {
+class Ag1117 {
 
     private final Semaphore semaphoreH;
     private final Semaphore semaphoreO;
@@ -25,7 +25,7 @@ class H2O {
         }
     });
 
-    public H2O() {
+    public Ag1117() {
         semaphoreH = new Semaphore(2);
         semaphoreO = new Semaphore(1);
     }
