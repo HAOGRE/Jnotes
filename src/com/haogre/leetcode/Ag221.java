@@ -21,7 +21,7 @@ package com.haogre.leetcode;
  * <p>
  * 输出: 4
  */
-public class Ag2221 {
+public class Ag221 {
     // 思维逻辑（暴力）解法，肯定有更优解
     public int maximalSquare(char[][] matrix) {
         int rs = 0;
