@@ -5,13 +5,13 @@ package com.haogre.leetcode;
  * @description
  * @date 2016年10月25日
  */
-public class Algorithm001Solution {
+public class Ag001 {
 
     public static void main(String[] args) {
         int[] arr = new int[]{3, 2, 4};
         int target = 6;
 
-        Algorithm001Solution Algorithm001Solution = new Algorithm001Solution();
+        Ag001 Algorithm001Solution = new Ag001();
         int[] twoSum = Algorithm001Solution.twoSum(arr, target);
 
         System.out.println("the first index is " + "-" + twoSum[0] + "-");

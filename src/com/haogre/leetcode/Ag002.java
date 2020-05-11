@@ -7,10 +7,10 @@ import com.haogre.leetcode.extra.ListNode;
  * @description /10 进位
  * @date 2016年10月26日
  */
-public class Algorithm002Solution {
+public class Ag002 {
 
     public static void main(String[] args) {
-        Algorithm002Solution solution = new Algorithm002Solution();
+        Ag002 solution = new Ag002();
         ListNode l1 = new ListNode(3);
         l1.next = new ListNode(4);
         l1.next = new ListNode(2);

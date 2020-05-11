@@ -5,7 +5,7 @@ package com.haogre.leetcode;
  * @description
  * @date 2017年11月24日
  */
-public class Algorithm010Solution {
+public class Ag010 {
 
     public static void main(String[] args) {
         System.out.println(isMatch("aa", "a"));  //false

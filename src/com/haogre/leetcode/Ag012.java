@@ -5,7 +5,7 @@ package com.haogre.leetcode;
  * @description Algorithm013 Integer to Roman
  * @date 2016年11月3日
  */
-public class Algorithm012Solution {
+public class Ag012 {
     //Input is guaranteed to be within the range from 1 to 3999. 没有太大意义 抄来一个
     public String intToRoman(int num) {
         if (num <= 0) {

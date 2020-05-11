@@ -5,9 +5,9 @@ package com.haogre.leetcode;
  * @description String to Integer (atoi  //此题并未解出 情况太多考虑不到如何全部取出不符合的情况    ascii to integer
  * @date 2016年11月3日
  */
-public class Algorithm008Solution {
+public class Ag008 {
     public static void main(String[] args) {
-        Algorithm008Solution s008 = new Algorithm008Solution();
+        Ag008 s008 = new Ag008();
         System.out.println(s008.myAtoi("2147483648"));
     }
 

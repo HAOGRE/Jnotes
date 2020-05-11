@@ -8,13 +8,13 @@ import java.util.Map;
  * @description Algorithm013 Roman to Integer
  * @date 2016年11月3日
  */
-public class Algorithm013Solution {
+public class Ag013 {
     public static void main(String[] args) {
         String x = "MCMXCVI";  //2216 wrong  1996 right  1000+(1000-100)+(100-10)+5+1 = 1996
         //+= 是错误的  后卫比前卫大的时候应该减  比如 IV = 4
         System.out.println(x.charAt(0)); //==I
 
-        Algorithm013Solution s013 = new Algorithm013Solution();
+        Ag013 s013 = new Ag013();
         System.out.println(s013.romanToInt(x));
     }
 

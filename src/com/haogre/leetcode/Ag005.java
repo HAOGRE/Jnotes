@@ -6,6 +6,6 @@ package com.haogre.leetcode;
  * @date 2016年11月14日
  */
 
-public class Algorithm005Solution {
+public class Ag005 {
 
 }

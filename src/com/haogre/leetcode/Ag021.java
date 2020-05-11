@@ -15,7 +15,7 @@ import com.haogre.leetcode.extra.ListNode;
 /**
  * Created by haozhang on 2017/2/7.
  */
-public class Algorithm021Solution {
+public class Ag021 {
 
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
 

@@ -10,7 +10,7 @@ import java.util.Set;
  * @description
  * @date 2016年10月31日
  */
-public class Algorithm003Solution {
+public class Ag003 {
 
     /**
      * my Solution

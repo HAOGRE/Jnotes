@@ -5,7 +5,7 @@ package com.haogre.leetcode;
  * @description 这个题刷锅  不是我的锅 就是这么简单
  * @date 2016年11月14日
  */
-public class Algorithm004Solution {
+public class Ag004 {
 
     // 递归处理
     public static int findKth(int[] A, int A_start,

@@ -14,7 +14,7 @@ import java.util.PriorityQueue;
  * @Date : 2019-07-22 22:01
  * @Version : V1.0
  **/
-public class Algorithm023Solution {
+public class Ag023 {
     /**
      * Definition for singly-linked list.
      * public class ListNode {

@@ -3,9 +3,9 @@ package com.haogre.leetcode;
 /**
  * Created by haogre on 12/6/2016.
  */
-public class Algorithm007Solution {
+public class Ag007 {
     public static void main(String[] args) {
-        Algorithm007Solution s7 = new Algorithm007Solution();
+        Ag007 s7 = new Ag007();
         int x = 1534236469;
         System.out.println(x / 10 / 10);
         System.out.println(s7.reverse(x));
