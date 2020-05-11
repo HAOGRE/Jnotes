@@ -89,8 +89,8 @@ public class Ag221 {
                                         dp[i - 1][j],
                                         // 上边
                                         dp[i][j - 1]),
-                                        // 对角
-                                        dp[i - 1][j - 1]) + 1;
+                                // 对角
+                                dp[i - 1][j - 1]) + 1;
                     }
                     maxSide = Math.max(maxSide, dp[i][j]);
                 }

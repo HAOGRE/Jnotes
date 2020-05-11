@@ -1,7 +1,5 @@
 package com.haogre.leetcode;
 
-import javax.swing.tree.TreeNode;
-
 /**
  * Created with IntelliJ IDEA
  *

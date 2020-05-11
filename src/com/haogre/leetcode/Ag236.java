@@ -8,7 +8,6 @@ package com.haogre.leetcode;
  * @Author : haogre@gmail.com
  * @Date : 2020/5/11 14:17
  * @Version : V1.0
- *
  **/
 public class Ag236 {
 }

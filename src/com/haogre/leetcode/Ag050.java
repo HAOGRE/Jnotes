@@ -13,22 +13,18 @@ public class Ag050 {
 
     /**
      * 搞笑解法
+     *
      * @param x
      * @param n
      * @return
      */
     public double myPow(double x, int n) {
-        return Math.pow(x,n);
+        return Math.pow(x, n);
     }
 
     public double myPow2(double x, int n) {
 
 
-
-
-
-
-
-        return Math.pow(x,n);
+        return Math.pow(x, n);
     }
 }
