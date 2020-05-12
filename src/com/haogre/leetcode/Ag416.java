@@ -33,6 +33,7 @@ public class Ag416 {
         // 目标数组的值得总计
         int target = sum / 2;
 
+        // 画一个 len 行，target + 1 列的表格
         // 创建二维状态数组，行：物品索引，列：容量（包括 0）
         boolean[][] dp = new boolean[len][target + 1];
 
