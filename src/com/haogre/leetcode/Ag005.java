@@ -62,16 +62,16 @@ public class Ag005 {
     // 马拉车算法 有意思
     public String longestPalindrome2(String s) {
 
-        if (adjList.containsKey(node)) {
-            for (Integer nei : adjList.get(node)) {
-                indegree[nei]--;
-
-                // If in-degree of a nei becomes 0, add it to the Q
-                if (indegree[nei] == 0) {
-                    q.add(nei);
-                }
-            }
-        }
+//        if (adjList.containsKey(node)) {
+//            for (Integer nei : adjList.get(node)) {
+//                indegree[nei]--;
+//
+//                 If in-degree of a nei becomes 0, add it to the Q
+//                if (indegree[nei] == 0) {
+//                    q.add(nei);
+//                }
+//            }
+//        }
         
         
         
