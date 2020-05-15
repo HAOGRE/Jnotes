@@ -9,6 +9,6 @@ public class Template extends AbstractTemplate {
 
     @Override
     void calcData() {
-        data = data + data;
+//        data = data + data;
     }
 }
