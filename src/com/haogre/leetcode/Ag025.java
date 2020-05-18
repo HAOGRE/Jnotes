@@ -35,6 +35,7 @@ import com.haogre.leetcode.extra.ListNode;
  * <p>
  **/
 public class Ag025 {
+    // pre head
     public ListNode reverseKGroup(ListNode head, int k) {
         ListNode dummy = new ListNode(0);
         dummy.next = head;
