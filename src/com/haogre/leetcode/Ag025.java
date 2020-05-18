@@ -33,15 +33,43 @@ import com.haogre.leetcode.extra.ListNode;
  * 你的算法只能使用常数的额外空间。
  * 你不能只是单纯的改变节点内部的值，而是需要实际进行节点交换。
  * <p>
- * 来源：力扣（LeetCode）
- * 链接：https://leetcode-cn.com/problems/reverse-nodes-in-k-group
- * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  **/
 public class Ag025 {
     public ListNode reverseKGroup(ListNode head, int k) {
+        ListNode dummy = new ListNode(0);
+        dummy.next = head;
 
+        ListNode pre = dummy;
+        ListNode end = dummy;
 
+        while (end.next != null) {
+            for (int i = 0; i < k && end != null; i++) {
+                end = end.next;
+            }
+            if (end == null) {
+                break;
+            }
+            ListNode start = pre.next;
+            ListNode next = end.next;
+            end.next = null;
+            pre.next = reverse(start);
+            start.next = next;
+            pre = start;
 
-        return null;
+            end = pre;
+        }
+        return dummy.next;
+    }
+
+    private ListNode reverse(ListNode head) {
+        ListNode pre = null;
+        ListNode curr = head;
+        while (curr != null) {
+            ListNode next = curr.next;
+            curr.next = pre;
+            pre = curr;
+            curr = next;
+        }
+        return pre;
     }
 }
