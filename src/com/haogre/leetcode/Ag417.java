@@ -1,9 +1,6 @@
 package com.haogre.leetcode;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 
 /**
  * @Project : Jnotes
@@ -35,7 +32,7 @@ public class Ag417 {
      * @param matrix
      * @return
      */
-    public List<List<Integer>> pacificAtlantic(int[][] matrix) {
+    public List<List<Integer>> pacificAtlanticiDFS(int[][] matrix) {
         if (matrix.length == 0 || matrix[0].length == 0) {
             return new ArrayList<>();
         }
@@ -95,7 +92,7 @@ public class Ag417 {
      * @param matrix
      * @return
      */
-    public List<List<Integer>> pacificAtlantic(int[][] matrix) {
+    public List<List<Integer>> pacificAtlanticBFS(int[][] matrix) {
 
         if (matrix.length == 0 || matrix[0].length == 0) {
             return new ArrayList<>();
