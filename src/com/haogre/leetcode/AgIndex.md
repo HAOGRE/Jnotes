@@ -1,6 +1,6 @@
 
 <tr>
-    <td><a href="https://leetcode-cn.com/problems/longest-palindromic-substring/solution">1205</a></td>
+    <td><a href="https://leetcode-cn.com/problems/longest-palindromic-substring/solution">5</a></td>
     <td><a href="https://leetcode-cn.com/problems/longest-palindromic-substring">最长回文子串</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/two-sum/solution">3836</a></td>
