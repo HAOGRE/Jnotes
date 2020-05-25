@@ -62,7 +62,7 @@
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/search-in-rotated-sorted-array">搜索旋转排序数组</a></td>
     <br/><br/>
-    <td><a href="/problems/find-first-and-last-position-of-element-in-sorted-array">在排序数组中查找元素的第一个和最后一个位置</a></td>
+    <td><a href="https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array">在排序数组中查找元素的第一个和最后一个位置</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/solution"
     <td><a href="https://leetcode-cn.com/problems/search-insert-position">搜索插入位置</a></td>
@@ -204,10 +204,10 @@
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/maximum-depth-of-binary-tree">二叉树的最大深度</a></td>
     <br/><br/>
-    <td><a href="/problems/construct-binary-tree-from-preorder-and-inorder-traversal">从前序与中序遍历序列构造二叉树</a></td>
+    <td><a href="https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal">从前序与中序遍历序列构造二叉树</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/solution"
-    <td><a href="/problems/construct-binary-tree-from-inorder-and-postorder-traversal">从中序与后序遍历序列构造二叉树</a></td>
+    <td><a href="https://leetcode-cn.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal">从中序与后序遍历序列构造二叉树</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/solution"
     <td><a href="https://leetcode-cn.com/problems/binary-tree-level-order-traversal-ii">二叉树的层次遍历 II</a></td>
@@ -316,7 +316,7 @@
     <br/><br/>
         <br/><br/>
         <br/><br/>
-    <td><a href="/problems/longest-substring-with-at-most-two-distinct-characters">至多包含两个不同字符的最长子串</a></td>
+    <td><a href="https://leetcode-cn.com/problems/longest-substring-with-at-most-two-distinct-characters">至多包含两个不同字符的最长子串</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/longest-substring-with-at-most-two-distinct-characters/solution"
     <td><a href="https://leetcode-cn.com/problems/intersection-of-two-linked-lists">相交链表</a></td>
@@ -641,7 +641,7 @@
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/coin-change">零钱兑换</a></td>
     <br/><br/>
-    <td><a href="/problems/number-of-connected-components-in-an-undirected-graph">无向图中连通分量的数目</a></td>
+    <td><a href="https://leetcode-cn.com/problems/number-of-connected-components-in-an-undirected-graph">无向图中连通分量的数目</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/number-of-connected-components-in-an-undirected-graph/solution"
     <td><a href="https://leetcode-cn.com/problems/wiggle-sort-ii">摆动排序
@@ -676,7 +676,7 @@
         <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/nested-list-weight-sum">嵌套列表权重和</a></td>
     <br/><br/>
-    <td><a href="/problems/longest-substring-with-at-most-k-distinct-characters">至多包含 K
+    <td><a href="https://leetcode-cn.com/problems/longest-substring-with-at-most-k-distinct-characters">至多包含 K
         <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/longest-substring-with-at-most-k-distinct-characters/solution"
     <td><a href="https://leetcode-cn.com/problems/flatten-nested-list-iterator">扁平化嵌套列表迭代器</a></td>
@@ -784,7 +784,7 @@
         <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/decode-string">字符串解码</a>
         <br/><br/>
-    <td><a href="/problems/longest-substring-with-at-least-k-repeating-characters">至少有K个重复字符的最长子串</a></td>
+    <td><a href="https://leetcode-cn.com/problems/longest-substring-with-at-least-k-repeating-characters">至少有K个重复字符的最长子串</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/longest-substring-with-at-least-k-repeating-characters/solution"
     <td><a href="https://leetcode-cn.com/problems/rotate-function">旋转函数</a>
@@ -847,7 +847,7 @@
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/word-squares">单词方块</a></td>
     <br/><br/>
-    <td><a href="/problems/convert-binary-search-tree-to-sorted-doubly-linked-list">将二叉搜索树转化为排序的双向链表</a></td>
+    <td><a href="https://leetcode-cn.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list">将二叉搜索树转化为排序的双向链表</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/solution"
     <td><a href="https://leetcode-cn.com/problems/construct-quad-tree">建立四叉树</a></td>
@@ -1106,7 +1106,7 @@
         <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/reverse-words-in-a-string-iii">反转字符串中的单词
         <br/><br/>
-    <td><a href="/problems/logical-or-of-two-binary-grids-represented-as-quad-trees">四叉树交集</a></td>
+    <td><a href="https://leetcode-cn.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees">四叉树交集</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees/solution"
     <td><a href="https://leetcode-cn.com/problems/maximum-depth-of-n-ary-tree">N叉树的最大深度</a></td>
@@ -1413,7 +1413,7 @@
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/subarray-product-less-than-k">乘积小于K的子数组</a></td>
     <br/><br/>
-    <td><a href="/problems/best-time-to-buy-and-sell-stock-with-transaction-fee">买卖股票的最佳时机含手续费</a></td>
+    <td><a href="https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee">买卖股票的最佳时机含手续费</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/solution"
     <td><a href="https://leetcode-cn.com/problems/range-module">Range
@@ -1509,7 +1509,7 @@
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/special-binary-string">特殊的二进制序列</a></td>
     <br/><br/>
-    <td><a href="/problems/prime-number-of-set-bits-in-binary-representation">二进制表示中质数个计算置位</a></td>
+    <td><a href="https://leetcode-cn.com/problems/prime-number-of-set-bits-in-binary-representation">二进制表示中质数个计算置位</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/prime-number-of-set-bits-in-binary-representation/solution"
     <td><a href="https://leetcode-cn.com/problems/partition-labels">划分字母区间</a>
@@ -1642,7 +1642,7 @@
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/making-a-large-island">最大人工岛</a></td>
     <br/><br/>
-    <td><a href="/problems/count-unique-characters-of-all-substrings-of-a-given-string">统计子串中的唯一字符</a></td>
+    <td><a href="https://leetcode-cn.com/problems/count-unique-characters-of-all-substrings-of-a-given-string">统计子串中的唯一字符</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/solution"
     <td><a href="https://leetcode-cn.com/problems/consecutive-numbers-sum">连续整数求和</a></td>
@@ -1763,7 +1763,7 @@
         <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/fair-candy-swap">公平的糖果交换</a>
         <br/><br/>
-    <td><a href="/problems/construct-binary-tree-from-preorder-and-postorder-traversal">根据前序和后序遍历构造二叉树</a></td>
+    <td><a href="https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal">根据前序和后序遍历构造二叉树</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/solution"
     <td><a href="https://leetcode-cn.com/problems/find-and-replace-pattern">查找和替换模式</a></td>
@@ -2000,7 +2000,7 @@
         <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/minimum-domino-rotations-for-equal-row">行相等的最少多米诺旋转</a></td>
     <br/><br/>
-    <td><a href="/problems/construct-binary-search-tree-from-preorder-traversal">先序遍历构造二叉树</a></td>
+    <td><a href="https://leetcode-cn.com/problems/construct-binary-search-tree-from-preorder-traversal">先序遍历构造二叉树</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/construct-binary-search-tree-from-preorder-traversal/solution"
     <br/><br/>
@@ -2083,7 +2083,7 @@
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/last-stone-weight-ii">最后一块石头的重量
         <br/><br/>
-    <td><a href="/problems/actors-and-directors-who-cooperated-at-least-three-times">合作过至少三次的演员和导演</a></td>
+    <td><a href="https://leetcode-cn.com/problems/actors-and-directors-who-cooperated-at-least-three-times">合作过至少三次的演员和导演</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/actors-and-directors-who-cooperated-at-least-three-times/solution"
     <td><a href="https://leetcode-cn.com/problems/height-checker">高度检查器</a>
@@ -2187,7 +2187,7 @@
         <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/two-sum-less-than-k">小于
         <br/><br/>
-    <td><a href="/problems/find-k-length-substrings-with-no-repeated-characters">长度为 K
+    <td><a href="https://leetcode-cn.com/problems/find-k-length-substrings-with-no-repeated-characters">长度为 K
         <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/find-k-length-substrings-with-no-repeated-characters/solution"
     <td><a href="https://leetcode-cn.com/problems/the-earliest-moment-when-everyone-become-friends">彼此熟识的最早时间</a></td>
@@ -2211,7 +2211,7 @@
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/delete-nodes-and-return-forest">删点成林</a></td>
     <br/><br/>
-    <td><a href="/problems/maximum-nesting-depth-of-two-valid-parentheses-strings">有效括号的嵌套深度</a></td>
+    <td><a href="https://leetcode-cn.com/problems/maximum-nesting-depth-of-two-valid-parentheses-strings">有效括号的嵌套深度</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/maximum-nesting-depth-of-two-valid-parentheses-strings/solution"
     <td><a href="https://leetcode-cn.com/problems/highest-grade-for-each-student">每位学生的最高成绩</a></td>
@@ -2286,7 +2286,7 @@
         <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/article-views-ii">文章浏览
         <br/><br/>
-    <td><a href="/problems/check-if-a-number-is-majority-element-in-a-sorted-array">检查一个数是否在数组中占绝大多数</a></td>
+    <td><a href="https://leetcode-cn.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array">检查一个数是否在数组中占绝大多数</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/solution"
     <br/><br/>
@@ -2328,10 +2328,10 @@
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/invalid-transactions">查询无效交易</a></td>
     <br/><br/>
-    <td><a href="/problems/compare-strings-by-frequency-of-the-smallest-character">比较字符串最小字母出现频次</a></td>
+    <td><a href="https://leetcode-cn.com/problems/compare-strings-by-frequency-of-the-smallest-character">比较字符串最小字母出现频次</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/compare-strings-by-frequency-of-the-smallest-character/solution"
-    <td><a href="/problems/remove-zero-sum-consecutive-nodes-from-linked-list">从链表中删去总和值为零的连续节点</a></td>
+    <td><a href="https://leetcode-cn.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list">从链表中删去总和值为零的连续节点</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/solution"
     <td><a href="https://leetcode-cn.com/problems/dinner-plate-stacks">餐盘栈</a>
@@ -2370,7 +2370,7 @@
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/maximum-number-of-balloons">“气球”
         <br/><br/>
-    <td><a href="/problems/reverse-substrings-between-each-pair-of-parentheses">反转每对括号间的子串</a></td>
+    <td><a href="https://leetcode-cn.com/problems/reverse-substrings-between-each-pair-of-parentheses">反转每对括号间的子串</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/reverse-substrings-between-each-pair-of-parentheses/solution"
     <td><a href="https://leetcode-cn.com/problems/k-concatenation-maximum-sum">K
@@ -2432,7 +2432,7 @@
         <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/play-with-chips">玩筹码</a>
         <br/><br/>
-    <td><a href="/problems/longest-arithmetic-subsequence-of-given-difference">最长定差子序列</a></td>
+    <td><a href="https://leetcode-cn.com/problems/longest-arithmetic-subsequence-of-given-difference">最长定差子序列</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/longest-arithmetic-subsequence-of-given-difference/solution"
     <td><a href="https://leetcode-cn.com/problems/path-with-maximum-gold">黄金矿工</a></td>
@@ -2471,13 +2471,13 @@
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/web-crawler">网络爬虫</a></td>
     <br/><br/>
-    <td><a href="/problems/find-positive-integer-solution-for-a-given-equation">找出给定方程的正整数解</a></td>
+    <td><a href="https://leetcode-cn.com/problems/find-positive-integer-solution-for-a-given-equation">找出给定方程的正整数解</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/find-positive-integer-solution-for-a-given-equation/solution"
     <td><a href="https://leetcode-cn.com/problems/circular-permutation-in-binary-representation">循环码排列</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/circular-permutation-in-binary-representation/solution"
-    <td><a href="/problems/maximum-length-of-a-concatenated-string-with-unique-characters">串联字符串的最大长度</a></td>
+    <td><a href="https://leetcode-cn.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters">串联字符串的最大长度</a></td>
     <br/><br/>
     <td>
         <a href="https://leetcode-cn.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/solution"
@@ -2526,7 +2526,7 @@
     <td><a href="https://leetcode-cn.com/problems/find-elements-in-a-contaminated-binary-tree/solution"
     <td><a href="https://leetcode-cn.com/problems/greatest-sum-tdisible-by-three">可被三整除的最大和</a></td>
     <br/><br/>
-    <td><a href="/problems/minimum-moves-to-move-a-box-to-their-target-location">推箱子</a></td>
+    <td><a href="https://leetcode-cn.com/problems/minimum-moves-to-move-a-box-to-their-target-location">推箱子</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/minimum-moves-to-move-a-box-to-their-target-location/solution"
     <td><a href="https://leetcode-cn.com/problems/page-recommendations">页面推荐</a></td>
@@ -2539,7 +2539,7 @@
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/search-suggestions-system">搜索推荐系统</a></td>
     <br/><br/>
-    <td><a href="/problems/number-of-ways-to-stay-in-the-same-place-after-some-steps">停在原地的方案数</a></td>
+    <td><a href="https://leetcode-cn.com/problems/number-of-ways-to-stay-in-the-same-place-after-some-steps">停在原地的方案数</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/number-of-ways-to-stay-in-the-same-place-after-some-steps/solution"
     <td><a href="https://leetcode-cn.com/problems/all-people-report-to-the-given-manager">向公司CEO汇报工作的所有人</a></td>
@@ -2564,20 +2564,20 @@
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/students-and-examinations">学生们参加各科测试的次数</a></td>
     <br/><br/>
-    <td><a href="/problems/subtract-the-product-and-sum-of-digits-of-an-integer">整数的各位积和之差</a></td>
+    <td><a href="https://leetcode-cn.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer">整数的各位积和之差</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/solution"
-    <td><a href="/problems/group-the-people-given-the-group-size-they-belong-to">用户分组</a></td>
+    <td><a href="https://leetcode-cn.com/problems/group-the-people-given-the-group-size-they-belong-to">用户分组</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/group-the-people-given-the-group-size-they-belong-to/solution"
     <td><a href="https://leetcode-cn.com/problems/find-the-smallest-tdisor-given-a-threshold">使结果不超过阈值的最小除数</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/find-the-smallest-tdisor-given-a-threshold/solution"
-    <td><a href="/problems/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix">转化为全零矩阵的最少反转次数</a></td>
+    <td><a href="https://leetcode-cn.com/problems/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix">转化为全零矩阵的最少反转次数</a></td>
     <br/><br/>
     <td>
         <a href="https://leetcode-cn.com/problems/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix/solution"
-    <td><a href="/problems/find-the-start-and-end-number-of-continuous-ranges">找到连续区间的开始和结束数字</a></td>
+    <td><a href="https://leetcode-cn.com/problems/find-the-start-and-end-number-of-continuous-ranges">找到连续区间的开始和结束数字</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/find-the-start-and-end-number-of-continuous-ranges/solution"
     <td><a href="https://leetcode-cn.com/problems/iterator-for-combination">字母组合迭代器</a></td>
@@ -2588,18 +2588,18 @@
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/minimum-falling-path-sum-ii">下降路径最小和
         <br/><br/>
-    <td><a href="/problems/convert-binary-number-in-a-linked-list-to-integer">二进制链表转整数</a></td>
+    <td><a href="https://leetcode-cn.com/problems/convert-binary-number-in-a-linked-list-to-integer">二进制链表转整数</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/convert-binary-number-in-a-linked-list-to-integer/solution"
     <td><a href="https://leetcode-cn.com/problems/sequential-digits">顺次数</a>
         <br/><br/>
     <td>
-        <a href="/problems/maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold">元素和小于等于阈值的正方形的最大边长</a>
+        <a href="https://leetcode-cn.com/problems/maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold">元素和小于等于阈值的正方形的最大边长</a>
     </td>
     <br/><br/>
     <td>
         <a href="https://leetcode-cn.com/problems/maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold/solution"
-    <td><a href="/problems/shortest-path-in-a-grid-with-obstacles-elimination">网格中的最短路径</a></td>
+    <td><a href="https://leetcode-cn.com/problems/shortest-path-in-a-grid-with-obstacles-elimination">网格中的最短路径</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/solution"
     <td><a href="https://leetcode-cn.com/problems/weather-type-in-each-country">不同国家的天气类型</a></td>
@@ -2614,7 +2614,7 @@
     <td><a href="https://leetcode-cn.com/problems/maximum-number-of-occurrences-of-a-substring/solution"
     <td><a href="https://leetcode-cn.com/problems/maximum-candies-you-can-get-from-boxes">你能从盒子里获得的最大糖果数</a></td>
     <br/><br/>
-    <td><a href="/problems/replace-elements-with-greatest-element-on-right-side">将每个元素替换为右侧最大元素</a></td>
+    <td><a href="https://leetcode-cn.com/problems/replace-elements-with-greatest-element-on-right-side">将每个元素替换为右侧最大元素</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/replace-elements-with-greatest-element-on-right-side/solution"
     <td><a href="https://leetcode-cn.com/problems/sum-of-mutated-array-closest-to-target">转变数组后最接近目标值的数组和</a></td>
@@ -2642,7 +2642,7 @@
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/get-watched-videos-by-your-friends">获取你好友已观看的视频</a></td>
     <br/><br/>
-    <td><a href="/problems/minimum-insertion-steps-to-make-a-string-palindrome">让字符串成为回文串的最少插入次数</a></td>
+    <td><a href="https://leetcode-cn.com/problems/minimum-insertion-steps-to-make-a-string-palindrome">让字符串成为回文串的最少插入次数</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/solution"
     <td><a href="https://leetcode-cn.com/problems/decompress-run-length-encoded-list">解压缩编码列表</a></td>
@@ -2653,7 +2653,7 @@
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/distinct-echo-substrings">不同的循环子字符串</a></td>
     <br/><br/>
-    <td><a href="/problems/convert-integer-to-the-sum-of-two-no-zero-integers">将整数转换为两个无零整数的和</a></td>
+    <td><a href="https://leetcode-cn.com/problems/convert-integer-to-the-sum-of-two-no-zero-integers">将整数转换为两个无零整数的和</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/convert-integer-to-the-sum-of-two-no-zero-integers/solution"
     <td><a href="https://leetcode-cn.com/problems/minimum-flips-to-make-a-or-b-equal-to-c">或运算的最小翻转次数</a></td>
@@ -2661,7 +2661,7 @@
     <td><a href="https://leetcode-cn.com/problems/number-of-operations-to-make-network-connected">连通网络的操作次数</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/number-of-operations-to-make-network-connected/solution"
-    <td><a href="/problems/minimum-distance-to-type-a-word-using-two-fingers">二指输入的的最小距离</a></td>
+    <td><a href="https://leetcode-cn.com/problems/minimum-distance-to-type-a-word-using-two-fingers">二指输入的的最小距离</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/minimum-distance-to-type-a-word-using-two-fingers/solution"
     <td><a href="https://leetcode-cn.com/problems/restaurant-growth">餐馆营业额变化增长</a></td>
@@ -2689,10 +2689,10 @@
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/remove-palindromic-subsequences">删除回文子序列</a></td>
     <br/><br/>
-    <td><a href="/problems/filter-restaurants-by-vegan-friendly-price-and-distance">餐厅过滤器</a></td>
+    <td><a href="https://leetcode-cn.com/problems/filter-restaurants-by-vegan-friendly-price-and-distance">餐厅过滤器</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/filter-restaurants-by-vegan-friendly-price-and-distance/solution"
-    <td><a href="/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance">阈值距离内邻居最少的城市</a>
+    <td><a href="https://leetcode-cn.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance">阈值距离内邻居最少的城市</a>
     </td>
     <br/><br/>
     <td>
@@ -2713,7 +2713,7 @@
     <br/><br/>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/number-of-steps-to-reduce-a-number-to-zero/solution"
-    <td><a href="/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold">大小为 K
+    <td><a href="https://leetcode-cn.com/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold">大小为 K
         且平均值大于等于阈值的子数组数目</a></td>
     <br/><br/>
     <td>
@@ -2724,7 +2724,7 @@
         <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/check-if-n-and-its-double-exist">检查整数及其两倍数是否存在</a></td>
     <br/><br/>
-    <td><a href="/problems/minimum-number-of-steps-to-make-two-strings-anagram">制造字母异位词的最小步骤数</a></td>
+    <td><a href="https://leetcode-cn.com/problems/minimum-number-of-steps-to-make-two-strings-anagram">制造字母异位词的最小步骤数</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/minimum-number-of-steps-to-make-two-strings-anagram/solution"
     <td><a href="https://leetcode-cn.com/problems/tweet-counts-per-frequency">推文计数</a></td>
@@ -2747,7 +2747,7 @@
         <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/apply-discount-every-n-orders">每隔 n
         <br/><br/>
-    <td><a href="/problems/number-of-substrings-containing-all-three-characters">包含所有三种字符的子字符串数目</a></td>
+    <td><a href="https://leetcode-cn.com/problems/number-of-substrings-containing-all-three-characters">包含所有三种字符的子字符串数目</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/number-of-substrings-containing-all-three-characters/solution"
     <td><a href="https://leetcode-cn.com/problems/count-all-valid-pickup-and-delivery-options">有效的快递序列数目</a></td>
@@ -2763,28 +2763,28 @@
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/number-of-trusted-contacts-of-a-customer">顾客的可信联系人数量</a></td>
     <br/><br/>
-    <td><a href="/problems/how-many-numbers-are-smaller-than-the-current-number">有多少小于当前数字的数字</a></td>
+    <td><a href="https://leetcode-cn.com/problems/how-many-numbers-are-smaller-than-the-current-number">有多少小于当前数字的数字</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/how-many-numbers-are-smaller-than-the-current-number/solution"
     <td><a href="https://leetcode-cn.com/problems/rank-teams-by-votes">通过投票对团队排名</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/linked-list-in-binary-tree">二叉树中的列表</a></td>
     <br/><br/>
-    <td><a href="/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid">使网格图至少有一条有效路径的最小代价</a></td>
+    <td><a href="https://leetcode-cn.com/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid">使网格图至少有一条有效路径的最小代价</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid/solution"
     <td><a href="https://leetcode-cn.com/problems/get-the-second-most-recent-activity">获取最近第二次的活动</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/increasing-decreasing-string">上升下降字符串</a></td>
     <br/><br/>
-    <td><a href="/problems/find-the-longest-substring-containing-vowels-in-even-counts">每个元音包含偶数次的最长子字符串</a></td>
+    <td><a href="https://leetcode-cn.com/problems/find-the-longest-substring-containing-vowels-in-even-counts">每个元音包含偶数次的最长子字符串</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/solution"
     <td><a href="https://leetcode-cn.com/problems/longest-zigzag-path-in-a-binary-tree">二叉树中的最长交错路径</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/maximum-sum-bst-in-binary-tree">二叉搜索子树的最大键值和</a></td>
     <br/><br/>
-    <td><a href="/problems/generate-a-string-with-characters-that-have-odd-counts">生成每种字符都是奇数个的字符串</a></td>
+    <td><a href="https://leetcode-cn.com/problems/generate-a-string-with-characters-that-have-odd-counts">生成每种字符都是奇数个的字符串</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/generate-a-string-with-characters-that-have-odd-counts/solution"
     <td><a href="https://leetcode-cn.com/problems/bulb-switcher-iii">灯泡开关
@@ -2796,7 +2796,7 @@
     <td><a href="https://leetcode-cn.com/problems/replace-employee-id-with-the-unique-identifier">使用唯一标识码替换员工ID</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/replace-employee-id-with-the-unique-identifier/solution"
-    <td><a href="/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree">找出克隆二叉树中的相同节点</a></td>
+    <td><a href="https://leetcode-cn.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree">找出克隆二叉树中的相同节点</a></td>
     <br/><br/>
     <td>
         <a href="https://leetcode-cn.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/solution"
@@ -2872,10 +2872,10 @@
     <td><a href="https://leetcode-cn.com/problems/minimum-value-to-get-positive-step-by-step-sum">逐步求和得到正数的最小值</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/minimum-value-to-get-positive-step-by-step-sum/solution"
-    <td><a href="/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k">和为
+    <td><a href="https://leetcode-cn.com/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k">和为
         <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k/solution"
-    <td><a href="/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n">长度为 n 的开心字符串中字典序第 k
+    <td><a href="https://leetcode-cn.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n">长度为 n 的开心字符串中字典序第 k
         小的字符串</a></td>
     <br/><br/>
     <td>
@@ -2889,7 +2889,7 @@
     <td><a href="https://leetcode-cn.com/problems/display-table-of-food-orders-in-a-restaurant/solution"
     <td><a href="https://leetcode-cn.com/problems/minimum-number-of-frogs-croaking">数青蛙</a></td>
     <br/><br/>
-    <td><a href="/problems/build-array-where-you-can-find-the-maximum-exactly-k-comparisons">生成数组</a></td>
+    <td><a href="https://leetcode-cn.com/problems/build-array-where-you-can-find-the-maximum-exactly-k-comparisons">生成数组</a></td>
     <br/><br/>
     <td>
         <a href="https://leetcode-cn.com/problems/build-array-where-you-can-find-the-maximum-exactly-k-comparisons/solution"
@@ -2911,20 +2911,20 @@
         <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/first-unique-number">First Unique
         <br/><br/>
-    <td><a href="/problems/check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree">Check If a
+    <td><a href="https://leetcode-cn.com/problems/check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree">Check If a
         String Is a Valid Sequence from Root to Leaves Path
         <br/><br/>
     <td>
         <a href="https://leetcode-cn.com/problems/check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree/solution"
     <td><a href="https://leetcode-cn.com/problems/kids-with-the-greatest-number-of-candies">拥有最多糖果的孩子</a></td>
     <br/><br/>
-    <td><a href="/problems/max-difference-you-can-get-from-changing-an-integer">改变一个整数能得到的最大差值</a></td>
+    <td><a href="https://leetcode-cn.com/problems/max-difference-you-can-get-from-changing-an-integer">改变一个整数能得到的最大差值</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/max-difference-you-can-get-from-changing-an-integer/solution"
     <td><a href="https://leetcode-cn.com/problems/check-if-a-string-can-break-another-string">检查一个字符串是否可以打破另一个字符串</a>
     </td>
     <br/><br/>
-    <td><a href="/problems/number-of-ways-to-wear-different-hats-to-each-other">每个人戴不同帽子的方案数</a></td>
+    <td><a href="https://leetcode-cn.com/problems/number-of-ways-to-wear-different-hats-to-each-other">每个人戴不同帽子的方案数</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/number-of-ways-to-wear-different-hats-to-each-other/solution"
     <td><a href="https://leetcode-cn.com/problems/create-a-session-bar-chart">Create a
@@ -2933,19 +2933,19 @@
         <br/><br/>
         <br/><br/>
     <td>
-        <a href="/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit">绝对差不超过限制的最长连续子数组</a>
+        <a href="https://leetcode-cn.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit">绝对差不超过限制的最长连续子数组</a>
     </td>
     <br/><br/>
     <td>
         <a href="https://leetcode-cn.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/solution"
-    <td><a href="/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows">有序矩阵中的第
+    <td><a href="https://leetcode-cn.com/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows">有序矩阵中的第
         <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows/solution"
     <td><a href="https://leetcode-cn.com/problems/evaluate-boolean-expression">Evaluate
         <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/build-an-array-with-stack-operations">用栈操作构建数组</a></td>
     <br/><br/>
-    <td><a href="/problems/count-triplets-that-can-form-two-arrays-of-equal-xor">形成两个异或相等数组的三元组数目</a></td>
+    <td><a href="https://leetcode-cn.com/problems/count-triplets-that-can-form-two-arrays-of-equal-xor">形成两个异或相等数组的三元组数目</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/solution"
     <td><a href="https://leetcode-cn.com/problems/minimum-time-to-collect-all-apples-in-a-tree">收集树上所有苹果的最少时间</a></td>
@@ -2961,19 +2961,19 @@
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/count-good-nodes-in-binary-tree">统计二叉树中好节点的数目</a></td>
     <br/><br/>
-    <td><a href="/problems/form-largest-integer-with-digits-that-add-up-to-target">数位成本和为目标值的最大数字</a></td>
+    <td><a href="https://leetcode-cn.com/problems/form-largest-integer-with-digits-that-add-up-to-target">数位成本和为目标值的最大数字</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/form-largest-integer-with-digits-that-add-up-to-target/solution"
-    <td><a href="/problems/number-of-students-doing-homework-at-a-given-time">在既定时间做作业的学生人数</a></td>
+    <td><a href="https://leetcode-cn.com/problems/number-of-students-doing-homework-at-a-given-time">在既定时间做作业的学生人数</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/number-of-students-doing-homework-at-a-given-time/solution"
     <td><a href="https://leetcode-cn.com/problems/rearrange-words-in-a-sentence">重新排列句子中的单词</a></td>
     <br/><br/>
-    <td><a href="/problems/people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list">收藏清单</a></td>
+    <td><a href="https://leetcode-cn.com/problems/people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list">收藏清单</a></td>
     <br/><br/>
     <td>
         <a href="https://leetcode-cn.com/problems/people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list/solution"
-    <td><a href="/problems/maximum-number-of-darts-inside-of-a-circular-dartboard">圆形靶内的最大飞镖数量</a></td>
+    <td><a href="https://leetcode-cn.com/problems/maximum-number-of-darts-inside-of-a-circular-dartboard">圆形靶内的最大飞镖数量</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/maximum-number-of-darts-inside-of-a-circular-dartboard/solution"
     <td><a href="https://leetcode-cn.com/problems/guess-numbers">猜数字</a></td>
@@ -3260,7 +3260,7 @@
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof">表示数值的字符串</a></td>
     <br/><br/>
-    <td><a href="/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof">调整数组顺序使奇数位于偶数前面</a></td>
+    <td><a href="https://leetcode-cn.com/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof">调整数组顺序使奇数位于偶数前面</a></td>
     <br/><br/>
     <td>
         <a href="https://leetcode-cn.com/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/solution"
@@ -3295,19 +3295,19 @@
     </td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/solution"
-    <td><a href="/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof">二叉树中和为某一值的路径</a></td>
+    <td><a href="https://leetcode-cn.com/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof">二叉树中和为某一值的路径</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof/solution"
     <td><a href="https://leetcode-cn.com/problems/fu-za-lian-biao-de-fu-zhi-lcof">复杂链表的复制</a></td>
     <br/><br/>
-    <td><a href="/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof">二叉搜索树与双向链表</a></td>
+    <td><a href="https://leetcode-cn.com/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof">二叉搜索树与双向链表</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/solution"
     <td><a href="https://leetcode-cn.com/problems/xu-lie-hua-er-cha-shu-lcof">序列化二叉树</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/zi-fu-chuan-de-pai-lie-lcof">字符串的排列</a></td>
     <br/><br/>
-    <td><a href="/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof">数组中出现次数超过一半的数字</a></td>
+    <td><a href="https://leetcode-cn.com/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof">数组中出现次数超过一半的数字</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/solution"
     <td><a href="https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof">最小的k个数</a></td>
@@ -3326,7 +3326,7 @@
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/li-wu-de-zui-da-jie-zhi-lcof">礼物的最大价值</a></td>
     <br/><br/>
-    <td><a href="/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof">最长不含重复字符的子字符串</a></td>
+    <td><a href="https://leetcode-cn.com/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof">最长不含重复字符的子字符串</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/solution"
     <td><a href="https://leetcode-cn.com/problems/chou-shu-lcof">丑数</a></td>
@@ -3335,7 +3335,7 @@
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/shu-zu-zhong-de-ni-xu-dui-lcof">数组中的逆序对</a></td>
     <br/><br/>
-    <td><a href="/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof">两个链表的第一个公共节点</a></td>
+    <td><a href="https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof">两个链表的第一个公共节点</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/solution"
     <td><a href="https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof">在排序数组中查找数字 I</a></td>
@@ -3385,7 +3385,7 @@
     <td><a href="https://leetcode-cn.com/problems/ba-zi-fu-chuan-zhuan-huan-cheng-zheng-shu-lcof">把字符串转换成整数</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/ba-zi-fu-chuan-zhuan-huan-cheng-zheng-shu-lcof/solution"
-    <td><a href="/problems/er-cha-sou-suo-shu-de-zui-jin-gong-gong-zu-xian-lcof">二叉搜索树的最近公共祖先</a></td>
+    <td><a href="https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-zui-jin-gong-gong-zu-xian-lcof">二叉搜索树的最近公共祖先</a></td>
     <br/><br/>
     <td><a href="https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-zui-jin-gong-gong-zu-xian-lcof/solution"
     <td><a href="https://leetcode-cn.com/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof">二叉树的最近公共祖先</a></td>
