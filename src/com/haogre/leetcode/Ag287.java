@@ -109,7 +109,7 @@ public class Ag287 {
      * @param nums
      * @return
      */
-    public int findDuplicate2(int[] nums) {
+    public static int findDuplicate2(int[] nums) {
         /**
          快慢指针思想, fast 和 slow 是指针, nums[slow] 表示取指针对应的元素
          注意 nums 数组中的数字都是在 1 到 n 之间的(在数组中进行游走不会越界),
@@ -118,17 +118,31 @@ public class Ag287 {
          **/
         int fast = 0, slow = 0;
         while (true) {
-            fast = nums[nums[fast]];
+            // slow 走一步
             slow = nums[slow];
+            // fast 走两步
+            fast = nums[nums[fast]];
             if (slow == fast) {
                 fast = 0;
                 while (nums[slow] != nums[fast]) {
-                    fast = nums[fast];
                     slow = nums[slow];
+                    fast = nums[fast];
                 }
                 return nums[slow];
             }
         }
+    }
+
+    public static void main(String[] args) {
+        int[] nums = new int[7];
+        nums[0] = 1;
+        nums[1] = 4;
+        nums[2] = 6;
+        nums[3] = 6;
+        nums[4] = 6;
+        nums[5] = 2;
+        nums[6] = 3;
+        int duplicate2 = findDuplicate2(nums);
     }
 
     public int findDuplicate5(int[] nums) {
