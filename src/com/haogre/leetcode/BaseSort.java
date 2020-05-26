@@ -72,7 +72,6 @@ public class BaseSort {
 
             while (preIndex >= 0 && current < array[preIndex]) {
 
-                array[]
                 // TODO 睡觉
             }
 

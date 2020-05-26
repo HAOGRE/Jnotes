@@ -18,10 +18,8 @@ public class Ag041 {
      * 如果 nums[0] > 0，则返回 n 。
      * 如果之前的步骤中没有发现 nums 中有正数元素，则返回n + 1。
      * <p>
-     * 作者：LeetCode
-     * 链接：https://leetcode-cn.com/problems/first-missing-positive/solution/que-shi-de-di-yi-ge-zheng-shu-by-leetcode/
-     * 来源：力扣（LeetCode）
-     * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+     *
+     * todo Ag287
      *
      * @param nums
      * @return
