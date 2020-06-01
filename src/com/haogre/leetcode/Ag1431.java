@@ -9,4 +9,5 @@ package com.haogre.leetcode;
  */
 public class Ag1431 {
 
+    // TODO 未研究
 }
