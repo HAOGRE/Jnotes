@@ -15,8 +15,6 @@ public class Ag561 {
     public int arrayPairSum(int[] nums) {
 
 
-
-
         return 0;
     }
 }

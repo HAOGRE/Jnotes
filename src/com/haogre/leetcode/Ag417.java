@@ -22,13 +22,14 @@ import java.util.*;
  * m 和 n 都小于150
  * BFS 常用于找单一的最短路线，它的特点是 "搜到就是最优解"，而 DFS 用于找所有解的问题，它的空间效率高，而且找到的不一定是最优解，必须记录并完成整个搜索，故一般情况下，深搜需要非常高效的剪枝（剪枝的概念请百度）。
  * BFS 的重点在于队列，而 DFS 的重点在于递归。这是它们的本质区别。
- *     // todo 晚上刷
+ * // todo 晚上刷
  */
 public class Ag417 {
 
     /**
      * 二维矩阵的所在位置的 上下左右 都比该元素小  DFS 递归
      * DFS
+     *
      * @param matrix
      * @return
      */
@@ -89,6 +90,7 @@ public class Ag417 {
 
     /**
      * BFS 队列
+     *
      * @param matrix
      * @return
      */
@@ -135,7 +137,7 @@ public class Ag417 {
         return res;
     }
 
-    private void bfs(int[][] matrix, int[][] aux , Queue<int[]> queue) {
+    private void bfs(int[][] matrix, int[][] aux, Queue<int[]> queue) {
         while (!queue.isEmpty()) {
             int[] array = queue.remove();
             int i = array[0];

@@ -16,12 +16,12 @@ public class Ag136 {
 
     // O(n)复杂度
     public int singleNumber(int[] nums) {
-        Map<Integer,Integer> rs = new HashMap<>();
+        Map<Integer, Integer> rs = new HashMap<>();
         for (int num : nums) {
             if (rs.containsKey(num)) {
                 rs.remove(num);
-            }else {
-                rs.put(num,num);
+            } else {
+                rs.put(num, num);
             }
         }
         return rs.values().iterator().next();

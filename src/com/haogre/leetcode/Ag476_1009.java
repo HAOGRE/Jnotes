@@ -27,6 +27,7 @@ public class Ag476_1009 {
 
     /**
      * TODO 还是没明白这个数学公式
+     *
      * @param num
      * @return
      */
@@ -50,6 +51,6 @@ public class Ag476_1009 {
     }
 
     public static void main(String[] args) {
-        System.out.println(5^7);
+        System.out.println(5 ^ 7);
     }
 }

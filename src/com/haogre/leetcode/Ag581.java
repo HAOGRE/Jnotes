@@ -20,7 +20,9 @@ public class Ag581 {
      */
     /**
      * 暴力两次循环
-     * @param nums * @return */
+     *
+     * @param nums * @return
+     */
     public int findUnsortedSubarray(int[] nums) {
 
         // 头 headIndex    headIndex >= headIndex + 1
@@ -39,6 +41,7 @@ public class Ag581 {
 
     /**
      * 排序
+     *
      * @param nums
      * @return
      */
