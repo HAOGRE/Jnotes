@@ -10,7 +10,7 @@ package com.haogre.leetcode.extra;
  * @Version : V1.0
  **/
 public class TreeNode {
-    int val;
+    public int val;
     public TreeNode left;
     public TreeNode right;
 
