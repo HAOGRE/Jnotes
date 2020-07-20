@@ -1,4 +1,4 @@
-package me.czd.jvm.jvm_learn.memoryerror;
+package com.haogre.oome;
 
 import java.lang.reflect.Field;
 import sun.misc.Unsafe;

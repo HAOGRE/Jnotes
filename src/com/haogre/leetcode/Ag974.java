@@ -10,6 +10,7 @@ package com.haogre.leetcode;
 public class Ag974 {
     public int subarraysDivByK(int[] A, int K) {
 
+        return 1;
     }
 
 }

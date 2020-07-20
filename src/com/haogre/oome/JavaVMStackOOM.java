@@ -1,4 +1,4 @@
-package me.czd.jvm.jvm_learn.memoryerror;
+package com.haogre.oome;
 
 /**
  * 方法调用中不断的创建线程，导致内存溢出

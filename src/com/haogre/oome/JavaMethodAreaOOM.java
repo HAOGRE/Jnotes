@@ -1,10 +1,4 @@
-package me.czd.jvm.jvm_learn.memoryerror;
-
-import java.lang.reflect.Method;
-
-import net.sf.cglib.proxy.Enhancer;
-import net.sf.cglib.proxy.MethodInterceptor;
-import net.sf.cglib.proxy.MethodProxy;
+package com.haogre.oome;
 
 /**
  * 借助于CGLib 是方法去出现内存溢出异常
@@ -21,21 +15,21 @@ public class JavaMethodAreaOOM {
 	static class OOMObject{
 		
 	}
-	public static void main(String[] args) {
-		while (true) {
-			System.out.println("/////////////");
-			Enhancer enhancer = new Enhancer();
-			enhancer.setSuperclass(OOMObject.class);
-			enhancer.setUseCache(false);
-			// new MethodInterceptor()
-			//动态代理6
-			enhancer.setCallback(new MethodInterceptor() {				
-				@Override
-				public Object intercept(Object obj, Method method, Object[] args, MethodProxy proxy) throws Throwable {
-					return proxy.invokeSuper(obj, args);
-				}
-			});
-			enhancer.create();
-		}
-	}
+//	public static void main(String[] args) {
+//		while (true) {
+//			System.out.println("/////////////");
+//			Enhancer enhancer = new Enhancer();
+//			enhancer.setSuperclass(OOMObject.class);
+//			enhancer.setUseCache(false);
+//			// new MethodInterceptor()
+//			//动态代理6
+//			enhancer.setCallback(new MethodInterceptor() {
+//				@Override
+//				public Object intercept(Object obj, Method method, Object[] args, MethodProxy proxy) throws Throwable {
+//					return proxy.invokeSuper(obj, args);
+//				}
+//			});
+//			enhancer.create();
+//		}
+//	}
 }

@@ -20,6 +20,6 @@ package com.haogre.leetcode;
  */
 public class Ag820 {
     public int minimumLengthEncoding(String[] words) {
-
+        return 1;
     }
 }
