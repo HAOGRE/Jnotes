@@ -10,6 +10,7 @@ package com.haogre.leetcode;
 public class Ag032 {
     public int longestValidParentheses(String s) {
 
+        return 1;
     }
 
 }

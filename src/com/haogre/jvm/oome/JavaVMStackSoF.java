@@ -8,7 +8,7 @@ package com.haogre.jvm.oome;
  * @author Administrator
  *
  */
-public class JavaVmStackSof {
+public class JavaVMStackSoF{
 	private int stackLength = 1;
 
 	public void stackLeak() {
@@ -18,7 +18,7 @@ public class JavaVmStackSof {
 	}
 
 	public static void main(String[] args) {
-		JavaVmStackSof oom = new JavaVmStackSof();
+		JavaVMStackSoF oom = new JavaVMStackSoF();
 		try {
 			oom.stackLeak();
 		} catch (Exception e) {
