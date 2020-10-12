@@ -13,5 +13,6 @@ public class Ag022 {
     public List<String> generateParenthesis(int n) {
 
 
+        return null;
     }
 }
