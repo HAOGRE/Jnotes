@@ -36,8 +36,13 @@
             for (Object o : jsonArray) {
                 JSONObject o1 = (JSONObject) o;
                 String logo = o1.getString("logo");
-                String cmdStr = "curl " + logo + " --output /Users/3t/Desktop/icons/" + key + "_" + i +".png";
-                System.out.println(cmdStr);
+            String cmdStr = "";
+            if (i == 0 ) {
+            cmdStr = "curl " + logo + " --output /Users/3t/Desktop/icons/" + key +".png";
+            } else {
+            cmdStr = "curl " + logo + " --output /Users/3t/Desktop/icons/" + key + "_" + i +".png";
+            }
+            System.out.println(cmdStr);
 //                String result = execCmd("java -version", null);
 
                 CompletableFuture.runAsync(() -> {
