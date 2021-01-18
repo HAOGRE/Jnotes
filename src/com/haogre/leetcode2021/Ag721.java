@@ -1,5 +1,7 @@
 package com.haogre.leetcode2021;
 
+import com.sun.tools.javac.util.StringUtils;
+
 import java.util.*;
 
 /**
@@ -19,54 +21,54 @@ public class Ag721 {
      */
 
 
-    class Solution {
-        public List<List<String>> accountsMerge(List<List<String>> accounts) {
-            Map<String, Integer> emailToIndex = new HashMap<String, Integer>();
-            Map<String, String> emailToName = new HashMap<String, String>();
-            int emailsCount = 0;
-            for (List<String> account : accounts) {
-                String name = account.get(0);
-                int size = account.size();
-                for (int i = 1; i < size; i++) {
-                    String email = account.get(i);
-                    if (!emailToIndex.containsKey(email)) {
-                        emailToIndex.put(email, emailsCount++);
-                        emailToName.put(email, name);
-                    }
+    public static List<List<String>> accountsMerge(List<List<String>> accounts) {
+        // 转化数组为存在关联关系的hash表-email地址
+        Map<String, Integer> emailToIndex = new HashMap<String, Integer>();
+        Map<String, String> emailToName = new HashMap<String, String>();
+        int emailsCount = 0;
+        for (List<String> account : accounts) {
+            String name = account.get(0);
+            int size = account.size();
+            for (int i = 1; i < size; i++) {
+                String email = account.get(i);
+                if (!emailToIndex.containsKey(email)) {
+                    emailToIndex.put(email, emailsCount++);
+                    emailToName.put(email, name);
                 }
             }
-            UnionFind uf = new UnionFind(emailsCount);
-            for (List<String> account : accounts) {
-                String firstEmail = account.get(1);
-                int firstIndex = emailToIndex.get(firstEmail);
-                int size = account.size();
-                for (int i = 2; i < size; i++) {
-                    String nextEmail = account.get(i);
-                    int nextIndex = emailToIndex.get(nextEmail);
-                    uf.union(firstIndex, nextIndex);
-                }
-            }
-            Map<Integer, List<String>> indexToEmails = new HashMap<Integer, List<String>>();
-            for (String email : emailToIndex.keySet()) {
-                int index = uf.find(emailToIndex.get(email));
-                List<String> account = indexToEmails.getOrDefault(index, new ArrayList<String>());
-                account.add(email);
-                indexToEmails.put(index, account);
-            }
-            List<List<String>> merged = new ArrayList<List<String>>();
-            for (List<String> emails : indexToEmails.values()) {
-                Collections.sort(emails);
-                String name = emailToName.get(emails.get(0));
-                List<String> account = new ArrayList<String>();
-                account.add(name);
-                account.addAll(emails);
-                merged.add(account);
-            }
-            return merged;
         }
+        // 并查集
+        UnionFind uf = new UnionFind(emailsCount);
+        for (List<String> account : accounts) {
+            String firstEmail = account.get(1);
+            int firstIndex = emailToIndex.get(firstEmail);
+            int size = account.size();
+            for (int i = 2; i < size; i++) {
+                String nextEmail = account.get(i);
+                int nextIndex = emailToIndex.get(nextEmail);
+                uf.union(firstIndex, nextIndex);
+            }
+        }
+        Map<Integer, List<String>> indexToEmails = new HashMap<Integer, List<String>>();
+        for (String email : emailToIndex.keySet()) {
+            int index = uf.find(emailToIndex.get(email));
+            List<String> account = indexToEmails.getOrDefault(index, new ArrayList<String>());
+            account.add(email);
+            indexToEmails.put(index, account);
+        }
+        List<List<String>> merged = new ArrayList<List<String>>();
+        for (List<String> emails : indexToEmails.values()) {
+            Collections.sort(emails);
+            String name = emailToName.get(emails.get(0));
+            List<String> account = new ArrayList<String>();
+            account.add(name);
+            account.addAll(emails);
+            merged.add(account);
+        }
+        return merged;
     }
 
-    class UnionFind {
+    static class UnionFind {
         int[] parent;
 
         public UnionFind(int n) {
@@ -88,4 +90,43 @@ public class Ag721 {
         }
     }
 
+    public static void main(String[] args) {
+
+        List<String> p1 = new ArrayList<>();
+        p1.add("John");
+        p1.add("1@mail.com");
+        p1.add("1x@mail.com");
+        p1.add("John");
+        List<String> p2 = new ArrayList<>();
+        p2.add("John");
+        p2.add("2@mail.com");
+        p2.add("2x@mail.com");
+        List<String> p3 = new ArrayList<>();
+        p3.add("Mary");
+        p3.add("1@mail.com");
+        List<String> p4 = new ArrayList<>();
+        p4.add("John");
+        p4.add("2@mail.com");
+        List<String> p5 = new ArrayList<>();
+        p5.add("John1");
+        p5.add("5@mail.com");
+        p5.add("5x@mail.com");
+        List<String> p6 = new ArrayList<>();
+        p6.add("John6");
+        p6.add("6@mail.com");
+        p6.add("6x@mail.com");
+        p6.add("6xx@mail.com");
+
+        List<List<String>> accounts = new ArrayList<>();
+        accounts.add(p1);
+        accounts.add(p2);
+        accounts.add(p3);
+        accounts.add(p4);
+        accounts.add(p5);
+        accounts.add(p6);
+
+
+        accountsMerge(accounts);
+
+    }
 }
