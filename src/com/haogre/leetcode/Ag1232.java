@@ -1,4 +1,4 @@
-package com.haogre.leetcode2021;
+package com.haogre.leetcode;
 
 /**
  * https://leetcode-cn.com/problems/check-if-it-is-a-straight-line/

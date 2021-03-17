@@ -1,4 +1,4 @@
-package com.haogre.leetcode2021;
+package com.haogre.leetcode;
 
 import java.util.*;
 
