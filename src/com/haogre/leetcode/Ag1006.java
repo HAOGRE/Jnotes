@@ -42,12 +42,9 @@ public class Ag1006 {
             N--;
         }
         int sum = 0;
-        for (Integer integer : stack) {
-            sum += integer;
+        while (!stack.isEmpty()) {
+            sum += stack.pop();
         }
-//        while (!stack.isEmpty()) {
-//            sum += stack.pop();
-//        }
         return sum;
     }
 }
